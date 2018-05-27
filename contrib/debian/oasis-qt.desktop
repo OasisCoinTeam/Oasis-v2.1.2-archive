@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Oasis
+Comment=Oasis P2P Cryptocurrency
+Comment[fr]=Oasis, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Oasis, eşten eşe kriptografik sanal para birimi
+Exec=oasis-qt %u
+Terminal=false
+Type=Application
+Icon=oasis128
+MimeType=x-scheme-handler/oasis;
+Categories=Office;Finance;
