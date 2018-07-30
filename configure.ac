@@ -1027,6 +1027,29 @@ if test "x$use_ccache" = "xyes"; then
     AX_CHECK_PREPROC_FLAG([-Qunused-arguments],[CPPFLAGS="-Qunused-arguments $CPPFLAGS"])
 fi
 
+dnl bignum value
+if test x"$req_bignum" = x"auto"; then
+  GMP_CHECK
+  if test x"$has_gmp" = x"yes"; then
+    set_bignum=gmp
+  fi
+else
+  set_bignum=$req_bignum
+  case $set_bignum in
+  gmp)
+    GMP_CHECK
+    if test x"$has_gmp" != x"yes"; then
+      AC_MSG_ERROR([gmp bignum explicitly requested but libgmp not available])
+    fi
+    ;;
+  openssl)
+    ;;
+  *)
+    AC_MSG_ERROR([invalid bignum implementation selection])
+    ;;
+  esac
+fi
+
 dnl enable wallet
 AC_MSG_CHECKING([if wallet should be enabled])
 if test x$enable_wallet != xno; then
@@ -1119,7 +1142,7 @@ openssl)
   ;;
 esac
 
-AC_MSG_CHECKING([whether to build test_oasis])
+AC_MSG_CHECKING([whether to build test_pivx])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"
@@ -1196,6 +1219,8 @@ AC_SUBST(EVENT_PTHREADS_LIBS)
 AC_SUBST(ZMQ_LIBS)
 AC_SUBST(PROTOBUF_LIBS)
 AC_SUBST(QR_LIBS)
+AC_SUBST(USE_NUM_GMP)
+AC_SUBST(USE_NUM_OPENSSL)
 AC_CONFIG_FILES([Makefile src/Makefile share/setup.nsi share/qt/Info.plist src/test/buildenv.py])
 AC_CONFIG_FILES([qa/pull-tester/run-bitcoind-for-test.sh],[chmod +x qa/pull-tester/run-bitcoind-for-test.sh])
 AC_CONFIG_FILES([qa/pull-tester/tests-config.sh],[chmod +x qa/pull-tester/tests-config.sh])
@@ -1261,6 +1286,7 @@ if test x$bitcoin_enable_qt != xno; then
     echo "    with qr     = $use_qr"
 fi
 echo "  with zmq      = $use_zmq"
+echo "  with bignum   = $set_bignum"
 echo "  with test     = $use_tests"
 dnl echo "  with bench    = $use_bench"
 echo "  with upnp     = $use_upnp"
