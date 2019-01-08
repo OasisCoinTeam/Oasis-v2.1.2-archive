@@ -1,8 +1,8 @@
 ---
-name: "oasis-aarch64-1.2"
+name: "oasis-aarch64-3.0"
 enable_cache: true
 suites:
-- "trusty"
+- "xenial"
 architectures:
 - "amd64"
 packages:

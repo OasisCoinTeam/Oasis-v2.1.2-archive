@@ -63,8 +63,6 @@ static const Checkpoints::CCheckpointData data = {
     2000        // * estimated number of transactions per day after checkpoint
 };
 
-
-
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
@@ -115,7 +113,7 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 30; // 
+        nTargetTimespan = 1 * 30; //
         nTargetSpacing = 1 * 60;  // Oasis: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
@@ -125,13 +123,12 @@ public:
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 201;
-        nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1527359909; //
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
-        
+        nZerocoinStartTime = 1527359909; // October 17, 2017 4:30:00 AM
+
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
@@ -156,13 +153,13 @@ public:
         genesis.nTime = 1527359509;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 737213;
-		
-		
+
+
 	hashGenesisBlock = genesis.GetHash();
     assert(hashGenesisBlock == uint256("0x00000d928efd171c0d8435d457d9becf8542c8e19ddb560dc9e08189014f6617"));
     assert(genesis.hashMerkleRoot == uint256("0x92efca81c11c8026ae8ee4fc743aee0e458f5b9866b917c381b0d3a1e7edda63"));
-		
-	
+
+
 	vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
 	vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
 	vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));// Single node - Remapper
@@ -172,8 +169,8 @@ public:
 	vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));// Single node - Remapper
 	vSeeds.push_back(CDNSSeedData("108.61.188.67", "108.61.188.67"));// Single node - Remapper
 	vSeeds.push_back(CDNSSeedData("209.250.242.215", "209.250.242.215"));// Single node - Remapper
-		
-		
+
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 115);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 15);
@@ -256,7 +253,7 @@ public:
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
-        
+
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1515616140;
         genesis.nNonce = 79855;

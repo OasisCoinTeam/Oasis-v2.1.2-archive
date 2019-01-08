@@ -2370,7 +2370,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOT10000IFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 10000 OASIS.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal 285 OASIS.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT10000IFMN) {
                         strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 OASIS.");
                     } else {
@@ -4451,7 +4451,7 @@ void CWallet::ZOASISBackupWallet()
     string strNewBackupName;
 
     for (int i = 0; i < 10; i++) {
-        strNewBackupName = strprintf("wallet-autozbrkbackup-%d.dat", i);
+        strNewBackupName = strprintf("wallet-autozoasisbackup-%d.dat", i);
         backupPath = backupDir / strNewBackupName;
 
         if (filesystem::exists(backupPath)) {
@@ -4473,7 +4473,7 @@ void CWallet::ZOASISBackupWallet()
                 continue;
             }
             //reset to 0 because name with 9 already used
-            strNewBackupName = strprintf("wallet-autozbrkbackup-%d.dat", 0);
+            strNewBackupName = strprintf("wallet-autozoasisbackup-%d.dat", 0);
             backupPath = backupDir / strNewBackupName;
             break;
         }
