@@ -1661,7 +1661,7 @@ Optional Features:
   --enable-wallet         enable wallet (default is yes)
   --enable-upnp-default   if UPNP is enabled, turn it on at startup (default
                           is no)
-  --enable-tests          compile tests (default is yes)
+  --enable-tests          compile tests (default is no)
   --enable-comparison-tool-reorg-tests
                           enable expensive reorg tests in the comparison tool
                           (default no)
@@ -18535,7 +18535,7 @@ fi
 if test "${enable_tests+set}" = set; then :
   enableval=$enable_tests; use_tests=$enableval
 else
-  use_tests=yes
+  use_tests=no
 fi
 
 
