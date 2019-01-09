@@ -133,12 +133,12 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
-        nZerocoinStartHeight = 201;
+        nZerocoinStartHeight = 201; // Block when zerocoin protocol gets activated
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
-        nZerocoinStartTime = 1527359909; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1527415096; // 2018-05-27T09:58:16Z
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
