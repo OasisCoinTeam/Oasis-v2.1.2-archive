@@ -54,7 +54,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zoasisontroldialog.ui
+  qt/forms/zoasiscontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
