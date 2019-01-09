@@ -53,14 +53,25 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x00000d928efd171c0d8435d457d9becf8542c8e19ddb560dc9e08189014f6617"));
+        boost::assign::map_list_of(0, uint256("0x00000d928efd171c0d8435d457d9becf8542c8e19ddb560dc9e08189014f6617"))
+                (1, uint256("0x000002cb5693188479b0634f5b5edb1357674b9bf20b2b17b5ca5b5c540fd7e3"))
+                (8, uint256("0x000002477df15df6a08518bd924b7815ead096c3421c6dbcb96eb49f2ce9b6af"))
+                (32, uint256("0x000005fb2690cf8a5655f5b5a4f034e5bc463aac27de102c2f8182abcf58149d"))
+                (128, uint256("0x000001e9ce3c7b697143a85733bea949f12b3838f29b71fcbcad851016092b66"))
+                (512, uint256("0x9b6153f6cdcda28d64de05ba16a0cf10b67e731270e76e6021fa44d615b34a8c"))
+                (2048, uint256("0xe623bb9b9218a7dc1ac331ea107f7c2824afe1502918f4eff2cc7714a29f86f0"))
+                (8192, uint256("0xf7a38982b2daecdcec76d7dba95107681f29c4898fbfd6760342edc8ad4cbeef"))
+                (32768, uint256("0xa18281199b89155587bf721291f2fcb1ffb075372e5afe298adbd138c8778c4a"))
+                (131072, uint256("0x9b824b20927aaf615343858e066c80b8991fb406447f2a5d33b1561bce6d8eb7"))
+                (262144, uint256("0x16d0e036281c22593c4e65791ae8d9932596907a2bd316d34bc109e51065c2af"))
+                (315204, uint256("0xab424d044357b3db106a8256cf840da72fa07f93c4548f5993b7b863d618fcbe"));
 
 static const Checkpoints::CCheckpointData data = {
-    &mapCheckpoints,
-    1525587795, // * UNIX timestamp of last checkpoint block
-    0,     // * total number of transactions between genesis and last checkpoint
-                //   (the tx=... number in the SetBestChain debug.log lines)
-    2000        // * estimated number of transactions per day after checkpoint
+        &mapCheckpoints,
+        1546306998, // * UNIX timestamp of last checkpoint block
+        632503,     // * total number of transactions between genesis and last checkpoint
+        //   (the tx=... number in the SetBestChain debug.log lines)
+        2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
