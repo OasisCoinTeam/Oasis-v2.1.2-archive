@@ -1,4 +1,4 @@
-# Oasis
+# Oasis PoS/MN Cryptocurrency
 
 OASIS Coin Masternode Cryptocurrency
 
