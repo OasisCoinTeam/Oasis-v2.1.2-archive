@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Pivx адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете Oasis адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -2076,8 +2076,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с PIVX мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Въведете колко PIV  да се конвертират в zPIV</translation>
+        <source>Enter an amount of Oasis to convert to zOasis</source>
+        <translation>Въведете колко OASIS  да се конвертират в zOASIS</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2132,11 +2132,11 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
+        <source>zOasis Control</source>
         <translation>zPIV Контрол</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
+        <source>zOasis Selected:</source>
         <translation>Избрани zPIV:</translation>
     </message>
     <message>
@@ -2430,7 +2430,7 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Oasis Address</source>
         <translation>Невалиден PIVX адрес</translation>
     </message>
     <message>
@@ -2474,7 +2474,7 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
+        <source>zOasis Spend #: </source>
         <translation>zPIV Похарчени #:</translation>
     </message>
     <message>
@@ -2498,7 +2498,7 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
+        <source>zOasis Mint</source>
         <translation>Сечене на zPIV</translation>
     </message>
     <message>
@@ -3955,23 +3955,23 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
+        <source>Converted Oasis tozOasis</source>
         <translation>Конвертиран PIV във zPIV</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zOasis</source>
         <translation>Похарчени zPIV</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>Получен PIV от zPIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zOasis from zOasis Spend</source>
         <translation>Исечено ресто като zPIV от похарчените zPIV</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
+        <source>Converted zOasis to Piv</source>
         <translation>Конвертирани zPIV в PIV</translation>
     </message>
     <message>
@@ -3979,7 +3979,7 @@ Please be patient...</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
+        <source>zOasis Accumulator</source>
         <translation>zPIV Акумулатор</translation>
     </message>
     <message>
@@ -4086,7 +4086,7 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>Получен PIV от zPIV</translation>
     </message>
     <message>
@@ -4098,7 +4098,7 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zOasis</source>
         <translation>Харчене на Zerocoin, Ресто в zPIV</translation>
     </message>
     <message>
@@ -4261,7 +4261,7 @@ Please be patient...</source>
 <context>
     <name>ZOASISControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zOasis to Spend</source>
         <translation>Изберете zPIV за Изпращане</translation>
     </message>
     <message>
@@ -4273,7 +4273,7 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
+        <source>zOasis</source>
         <translation>zPIV</translation>
     </message>
     <message>

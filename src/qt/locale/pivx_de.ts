@@ -239,7 +239,7 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Gib eine PIVX Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
@@ -2071,8 +2071,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem PIVX-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Eingabe des Piv-Betrags, um in zPiv umzuwandeln</translation>
+        <source>Enter an amount of Oasis toconvert to zOasis</source>
+        <translation>Eingabe des Piv-Betrags, um in zOasis umzuwandeln</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2127,12 +2127,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Status und/oder Mitteilungen aus der letzten Prägung</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
-        <translation>zPiv Kontrolle</translation>
+        <source>zOasis Control</source>
+        <translation>zOasis Kontrolle</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
-        <translation>zPiv Ausgewählt:</translation>
+        <source>zOasis Selected:</source>
+        <translation>zOasis Ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2425,7 +2425,7 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Oasis Address</source>
         <translation>Ungültige PIVX-Adresse </translation>
     </message>
     <message>
@@ -2469,7 +2469,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgeben Zerocoin fehlgeschlagen mit Status =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
+        <source>zOasis Spend #: </source>
         <translation>zPIV Ausgeben #:</translation>
     </message>
     <message>
@@ -2493,8 +2493,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
-        <translation>zPiv Prägen</translation>
+        <source>zOasis Mint</source>
+        <translation>zOasis Prägen</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3950,23 +3950,23 @@ Bitte haben Sie Geduld...</translation>
         <translation>Verschleiert</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
+        <source>Converted Oasis tozOasis</source>
         <translation>Umgewandeltes PIV zu zPIV</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zOasis</source>
         <translation>Ausgeben zPIV</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>Empfangene PIV von zPIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zOasis from zOasis Spend</source>
         <translation>Geprägtes Wechselgeld als zPIV von zPIV Ausgabe</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
+        <source>Converted zOasis to Piv</source>
         <translation>Umgewandeltes zPIV zu PIV</translation>
     </message>
     <message>
@@ -3974,7 +3974,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>nur beobachtet</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
+        <source>zOasis Accumulator</source>
         <translation>zPIV Speicher</translation>
     </message>
     <message>
@@ -4085,7 +4085,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Masternode Vergütung</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>Empfangene PIV von zPIV</translation>
     </message>
     <message>
@@ -4097,7 +4097,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Zerocoin Ausgabe</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zOasis</source>
         <translation>Zerocoin Ausgabe, Wechselgeld in zPIV</translation>
     </message>
     <message>
@@ -4268,7 +4268,7 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ZOASISControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zOasis to Spend</source>
         <translation>Auswahl zPIV als Ausgabe</translation>
     </message>
     <message>
@@ -4280,7 +4280,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
+        <source>zOasis</source>
         <translation>zPIV</translation>
     </message>
     <message>
