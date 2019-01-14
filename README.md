@@ -18,6 +18,7 @@ Telegram - https://t.me/intheOASIS
 
 Coin Specs
 
+
 Algo	                 Quark
 Block Time	           50-70 Seconds
 Difficulty Retargeting	Every Block
