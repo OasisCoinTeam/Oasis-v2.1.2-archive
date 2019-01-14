@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>输入您要使用BIP 38加密的Pivx地址。在中间框中输入密码。按加密计算加密私钥。</translation>
+        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>输入您要使用BIP 38加密的Oasis地址。在中间框中输入密码。按加密计算加密私钥。</translation>
     </message>
     <message>
         <source>Address:</source>

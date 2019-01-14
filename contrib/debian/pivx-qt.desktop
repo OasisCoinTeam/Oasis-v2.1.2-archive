@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Pivx
-Comment=Pivx P2P Cryptocurrency
-Comment[fr]=Pivx, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Pivx, eşten eşe kriptografik sanal para birimi
+Name=Oasis
+Comment=Oasis P2P Cryptocurrency
+Comment[fr]=Oasis, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Oasis, eşten eşe kriptografik sanal para birimi
 Exec=pivx-qt %u
 Terminal=false
 Type=Application
