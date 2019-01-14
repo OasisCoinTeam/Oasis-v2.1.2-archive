@@ -17,9 +17,6 @@ src/qt/test/test_oasis-qt
 # autoreconf
 Makefile.in
 aclocal.m4
-depends/config.guess
-depends/config.site.in
-depends/config.sub
 autom4te.cache/
 build-aux/config.guess
 build-aux/config.sub
