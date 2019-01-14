@@ -1311,7 +1311,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     </context>
 <context>
     <name>pivx-core</name>

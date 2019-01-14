@@ -4266,7 +4266,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
         <translation>Auswahl zPIV als Ausgabe</translation>

@@ -4255,7 +4255,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
         <translation>Selecteer zPiv om te spenderen</translation>

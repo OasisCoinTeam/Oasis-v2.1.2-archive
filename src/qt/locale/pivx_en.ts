@@ -5664,7 +5664,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
         <source>Select zPiv to Spend</source>

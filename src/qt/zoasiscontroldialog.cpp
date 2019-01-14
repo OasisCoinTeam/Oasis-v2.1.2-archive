@@ -10,12 +10,12 @@
 
 using namespace std;
 
-std::list<std::string> ZPivControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZPivControlDialog::listMints;
+std::list<std::string> ZOASISControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZOASISControlDialog::listMints;
 
-ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
+ZOASISControlDialog::ZOASISControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZPivControlDialog),
+    ui(new Ui::ZOASISControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -29,19 +29,19 @@ ZPivControlDialog::ZPivControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZPivControlDialog::~ZPivControlDialog()
+ZOASISControlDialog::~ZOASISControlDialog()
 {
     delete ui;
 }
 
-void ZPivControlDialog::setModel(WalletModel *model)
+void ZOASISControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZPivControlDialog::updateList()
+void ZOASISControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -130,7 +130,7 @@ void ZPivControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZPivControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZOASISControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -153,7 +153,7 @@ void ZPivControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZPivControlDialog::updateLabels()
+void ZOASISControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -163,14 +163,14 @@ void ZPivControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZPiv_int->setText(QString::number(nAmount));
+    ui->labelZOASIS_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZPivControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZOASISControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZPivControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZOASISControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -183,7 +183,7 @@ std::vector<CZerocoinMint> ZPivControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZPivControlDialog::ButtonAllClicked()
+void ZOASISControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

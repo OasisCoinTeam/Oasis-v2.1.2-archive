@@ -1687,7 +1687,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

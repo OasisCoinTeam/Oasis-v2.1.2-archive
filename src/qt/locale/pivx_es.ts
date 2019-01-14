@@ -4275,7 +4275,7 @@ Por favor tenga paciencia...</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
         <translation>Seleccione zPiv a Gastar</translation>

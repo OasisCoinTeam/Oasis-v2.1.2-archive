@@ -4259,7 +4259,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
         <translation>Изберете zPIV за Изпращане</translation>
