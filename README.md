@@ -15,7 +15,7 @@ More information at our ANN thread at BitcoinTalk - https://bitcointalk.org/inde
 Join our Community At:
 Discord - https://discord.gg/5SgtbHK
 Telegram - https://t.me/intheOASIS
-
+ 
 Coin Specs
 
 
