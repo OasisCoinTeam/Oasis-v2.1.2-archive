@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "zoasiscontroldialog.h"
-#include "ui_zpivcontroldialog.h"
+#include "ui_zoasiscontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
