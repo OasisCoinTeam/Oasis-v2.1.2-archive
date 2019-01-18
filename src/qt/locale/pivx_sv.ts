@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en Oasis adress som du vill kryptera med BIP 38.
+        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en Pivx adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>

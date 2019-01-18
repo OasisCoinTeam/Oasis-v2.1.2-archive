@@ -1979,8 +1979,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zOasis</source>
-        <translation>zOasis</translation>
+        <source>zPiv</source>
+        <translation>zPiv</translation>
     </message>
     </context>
 <context>

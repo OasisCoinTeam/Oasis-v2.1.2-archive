@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Select zOasis to Spend</string>
+   <string>Select zPiv to Spend</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -42,7 +42,7 @@
      <item row="1" column="0">
       <widget class="QLabel" name="labelZOASIS">
        <property name="text">
-        <string>zOasis</string>
+        <string>zPiv</string>
        </property>
       </widget>
      </item>
@@ -96,7 +96,7 @@
        </column>
        <column>
         <property name="text">
-         <string notr="true">zOasis Public ID</string>
+         <string notr="true">zPiv Public ID</string>
         </property>
        </column>
        <column>

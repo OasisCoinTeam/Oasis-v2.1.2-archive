@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2737,7 +2737,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of Oasis toconvert to zOasis</source>
+        <source>Enter an amount of Piv to convert to zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2816,12 +2816,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+45"/>
-        <source>zOasis Control</source>
+        <source>zPiv Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zOasis Selected:</source>
+        <source>zPiv Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3234,7 +3234,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid Oasis Address</source>
+        <source>Invalid Pivx Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3304,7 +3304,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zOasis Spend #: </source>
+        <source>zPiv Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3334,7 +3334,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>zOasis Mint</source>
+        <source>zPiv Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5270,27 +5270,27 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted Oasis tozOasis</source>
+        <source>Converted Piv to zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zOasis</source>
+        <source>Spent zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received Piv from zOasis</source>
+        <source>Received Piv from zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zOasis from zOasis Spend</source>
+        <source>Minted Change as zPiv from zPiv Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zOasis to Piv</source>
+        <source>Converted zPiv to Piv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5300,7 +5300,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+22"/>
-        <source>zOasis Accumulator</source>
+        <source>zPiv Accumulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5439,7 +5439,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received Piv from zOasis</source>
+        <source>Received Piv from zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5454,7 +5454,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin Spend, Change in zOasis</source>
+        <source>Zerocoin Spend, Change in zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5667,7 +5667,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZOASISControlDialog</name>
     <message>
         <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
-        <source>Select zOasis to Spend</source>
+        <source>Select zPiv to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5683,7 +5683,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zOasis</source>
+        <source>zPiv</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6538,7 +6538,7 @@ for example: alertnotify=echo %%s | mail -s &quot;PIVX Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+44"/>
-        <source>Enable automatic wallet backups triggered after each zOasis minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zPiv minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -4196,7 +4196,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_Block_EnforceSerialRange(), state))
             return error("CheckBlock() : CheckTransaction failed");
 
-        // double check that there are no double spent zOasis spends in this block
+        // double check that there are no double spent zPiv spends in this block
         if (tx.IsZerocoinSpend()) {
             for (const CTxIn txIn : tx.vin) {
                 if (txIn.scriptSig.IsZerocoinSpend()) {

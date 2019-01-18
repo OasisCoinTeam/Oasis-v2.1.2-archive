@@ -235,7 +235,7 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Введите PIVX адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
@@ -2032,8 +2032,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью PIVX после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
-        <source>Enter an amount of Oasis toconvert to zOasis</source>
-        <translation>Введите сумму в Piv для  конвертации в zOasis</translation>
+        <source>Enter an amount of Piv to convert to zPiv</source>
+        <translation>Введите сумму в Piv для  конвертации в zPiv</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
