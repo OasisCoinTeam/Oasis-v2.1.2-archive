@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Oasis developers
+// Copyright (c) 2019 The Oasis developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -168,9 +168,6 @@ void PrepareShutdown()
 {
     fRequestShutdown = true;  // Needed when we shutdown the wallet
     fRestartRequested = true; // Needed when we restart the wallet
-	
-	ShutdownRPCMining();
-	
     LogPrintf("%s: In progress...\n", __func__);
     static CCriticalSection cs_Shutdown;
     TRY_LOCK(cs_Shutdown, lockShutdown);
@@ -489,7 +486,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enablezeromint=<n>", strprintf(_("Enable automatic Zerocoin minting (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (10-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupzbrk=<n>", strprintf(_("Enable automatic wallet backups triggered after each zOASIS minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-backupzoasis=<n>", strprintf(_("Enable automatic wallet backups triggered after each zOASIS minting (0-1, default: %u)"), 1));
 
 //    strUsage += "  -anonymizeoasisamount=<n>     " + strprintf(_("Keep N OASIS anonymized (default: %u)"), 0) + "\n";
 //    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
@@ -1356,7 +1353,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
-                    if (chainActive.Height() >= Params().Zerocoin_AccumulatorStartHeight()) {
+                    if (chainActive.Height() >= Params().Zerocoin_StartHeight()) {
                         RecalculateZOASISMinted();
                         RecalculateZOASISSpent();
                     }
@@ -1365,7 +1362,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
                 // Force recalculation of accumulators.
                 if (GetBoolArg("-reindexaccumulators", false)) {
-                    CBlockIndex* pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
+                    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
                     while (pindex->nHeight < chainActive.Height()) {
                         if (!count(listAccCheckpointsNoDB.begin(), listAccCheckpointsNoDB.end(), pindex->nAccumulatorCheckpoint))
                             listAccCheckpointsNoDB.emplace_back(pindex->nAccumulatorCheckpoint);
@@ -1608,7 +1605,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
         fVerifyingBlocks = false;
 
-        bool fEnableZOASISBackups = GetBoolArg("-backupzbrk", true);
+        bool fEnableZOASISBackups = GetBoolArg("-backupzoasis", true);
         pwalletMain->setZOASISAutoBackups(fEnableZOASISBackups);
     }  // (!fDisableWallet)
 #else  // ENABLE_WALLET
@@ -1637,9 +1634,8 @@ bool AppInit2(boost::thread_group& threadGroup)
     }
 
     // ********************************************************* Step 10: setup ObfuScation
-	InitRPCMining();
-    
-	uiInterface.InitMessage(_("Loading masternode cache..."));
+
+    uiInterface.InitMessage(_("Loading masternode cache..."));
 
     CMasternodeDB mndb;
     CMasternodeDB::ReadResult readResult = mndb.Read(mnodeman);
@@ -1741,7 +1737,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         }
     }
 
-    fEnableZeromint = GetBoolArg("-enablezeromint", false);
+    fEnableZeromint = GetBoolArg("-enablezeromint", true);
 
     nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (nZeromintPercentage > 100) nZeromintPercentage = 100;

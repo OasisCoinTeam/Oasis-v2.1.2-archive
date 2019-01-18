@@ -28,9 +28,9 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
     ui->passEdit2->setMinimumSize(ui->passEdit2->sizeHint());
     ui->passEdit3->setMinimumSize(ui->passEdit3->sizeHint());
 
-    ui->passEdit1->setMaxLength(MAX_PASSOASISASE_SIZE);
-    ui->passEdit2->setMaxLength(MAX_PASSOASISASE_SIZE);
-    ui->passEdit3->setMaxLength(MAX_PASSOASISASE_SIZE);
+    ui->passEdit1->setMaxLength(MAX_PASSPHRASE_SIZE);
+    ui->passEdit2->setMaxLength(MAX_PASSPHRASE_SIZE);
+    ui->passEdit3->setMaxLength(MAX_PASSPHRASE_SIZE);
 
     // Setup Caps Lock detection.
     ui->passEdit1->installEventFilter(this);
@@ -49,6 +49,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
     case UnlockAnonymize:
         ui->anonymizationCheckBox->setChecked(true);
         ui->anonymizationCheckBox->show();
+        [[gnu::fallthrough]];
     case Unlock: // Ask passphrase
         ui->warningLabel->setText(tr("This operation needs your wallet passphrase to unlock the wallet."));
         ui->passLabel2->hide();
@@ -93,9 +94,9 @@ void AskPassphraseDialog::accept()
     SecureString oldpass, newpass1, newpass2;
     if (!model)
         return;
-    oldpass.reserve(MAX_PASSOASISASE_SIZE);
-    newpass1.reserve(MAX_PASSOASISASE_SIZE);
-    newpass2.reserve(MAX_PASSOASISASE_SIZE);
+    oldpass.reserve(MAX_PASSPHRASE_SIZE);
+    newpass1.reserve(MAX_PASSPHRASE_SIZE);
+    newpass2.reserve(MAX_PASSPHRASE_SIZE);
     // TODO: get rid of this .c_str() by implementing SecureString::operator=(std::string)
     // Alternately, find a way to make this input mlock()'d to begin with.
     oldpass.assign(ui->passEdit1->text().toStdString().c_str());
