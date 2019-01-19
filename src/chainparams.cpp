@@ -176,6 +176,9 @@ public:
         vSeeds.push_back(CDNSSeedData("80.211.33.67", "80.211.33.67"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("18.218.209.226", "18.218.209.226"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("51.15.89.68", "51.15.89.68"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
+        vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 115);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 15);
@@ -198,7 +201,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04b080934472357368be9982a8c138968958267ff5de3d70d92d2d436642dd1da3976b2b1ec62f934a6b925fc1ccab32205580d1d50554fb1da3c2d8b964c15d3d";
+        strSporkKey = "044ba081b574573f3596033db4f02ea522e44e5bf56ddffa7ebedf7042ae7198039b4b222122142f7e8565ef6c48334381c247dde97291de7221dc69d5fcf03f10";
         strObfuscationPoolDummyAddress = "oSQo21b24dD6AvQ2QyAfQFdBHTSw894tJb";
         nStartMasternodePayments = 1516371317; //Wed, 25 Jun 2014 20:36:16 GMT
 
@@ -235,12 +238,12 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x33;
+        pchMessageStart[0] = 0xb3;
         pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x56;
+        pchMessageStart[2] = 0x66;
         pchMessageStart[3] = 0xca;
         vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
-        nDefaultPort = 6600;
+        nDefaultPort = 6606;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -295,7 +298,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "044e3bfa8d1a0f0807dfd6a85d18ad39e4df40b3b0c7fb1c46f4840805dbe0c810c6cfd2e56f7df41966433d2072aca2115e0dae56387a199d8d2aa69b52398436";
+        strSporkKey = "04c62158726f96a7cc7d4000ec813f1aaddf4b2d60978446cf1799132b96e35d3ca6c18c75f90c54503901ecde1bbd40e0e0e20fa498d6b715cf7f00db2dd7a09b";
         strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
