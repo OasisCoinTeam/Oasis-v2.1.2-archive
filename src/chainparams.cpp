@@ -176,6 +176,9 @@ public:
         vSeeds.push_back(CDNSSeedData("80.211.33.67", "80.211.33.67"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("18.218.209.226", "18.218.209.226"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("51.15.89.68", "51.15.89.68"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
+        vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 115);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 15);
