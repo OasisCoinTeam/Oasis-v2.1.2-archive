@@ -242,8 +242,8 @@
         <translation>&amp;BIP 38 şifrele</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir Pivx Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
+        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir Oasis Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
 </translation>
     </message>
     <message>

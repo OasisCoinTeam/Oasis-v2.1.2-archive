@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 암호화</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38을 사용하여 암호화 할 Pivx 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
+        <source>Enter a Oasis Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38을 사용하여 암호화 할 Oasis 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -2080,7 +2080,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 PIVX 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPiv</source>
+        <source>Enter an amount of Oasis toconvert to zOasis</source>
         <translation>zPIV로 변환할 PIV 수량을 입력하세요.</translation>
     </message>
     <message>
@@ -2136,11 +2136,11 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>마지막 발행 이후 상태나 메세지</translation>
     </message>
     <message>
-        <source>zPiv Control</source>
+        <source>zOasis Control</source>
         <translation>zPIV 설정</translation>
     </message>
     <message>
-        <source>zPiv Selected:</source>
+        <source>zOasis Selected:</source>
         <translation>선택한 zPIV : </translation>
     </message>
     <message>
@@ -2434,7 +2434,7 @@ Please be patient...</source>
         <translation>주소를 입력하지 않아, 신규 주소를 생성합니다.</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Oasis Address</source>
         <translation>잘못된 PIVX 주소</translation>
     </message>
     <message>
@@ -2478,8 +2478,8 @@ Please be patient...</source>
         <translation>제로코인 송금 실패 상태 =</translation>
     </message>
     <message>
-        <source>zPiv Spend #: </source>
-        <translation>zPiv 송금 #: </translation>
+        <source>zOasis Spend #: </source>
+        <translation>zOasis 송금 #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2502,7 +2502,7 @@ Please be patient...</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>zPiv Mint</source>
+        <source>zOasis Mint</source>
         <translation>zPIV 생성</translation>
     </message>
     <message>
@@ -3961,32 +3961,32 @@ Please be patient...</source>
         <translation>난독화</translation>
     </message>
     <message>
-        <source>Converted Piv to zPiv</source>
+        <source>Converted Oasis tozOasis</source>
         <translation>zPIV로 변환된 PIV</translation>
     </message>
     <message>
-        <source>Spent zPiv</source>
+        <source>Spent zOasis</source>
         <translation>전송된 zPIV</translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>zPIV로 전송받은 PIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPiv from zPiv Spend</source>
+        <source>Minted Change as zOasis from zOasis Spend</source>
         <translation>zPIV 전송후 남은 잔돈 zPIV 생성됨</translation>
     </message>
     <message>
-        <source>Converted zPiv to Piv</source>
-        <translation>zPiv에서 Piv로 변환됨</translation>
+        <source>Converted zOasis to Piv</source>
+        <translation>zOasis에서 Piv로 변환됨</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
     </message>
     <message>
-        <source>zPiv Accumulator</source>
-        <translation>zPiv 누산기</translation>
+        <source>zOasis Accumulator</source>
+        <translation>zOasis 누산기</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4096,7 +4096,7 @@ Please be patient...</source>
         <translation>마스터노드 보상 </translation>
     </message>
     <message>
-        <source>Received Piv from zPiv</source>
+        <source>Received Piv from zOasis</source>
         <translation>zPIV로 전송받은 PIV</translation>
     </message>
     <message>
@@ -4108,7 +4108,7 @@ Please be patient...</source>
         <translation>제로코인 전송</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPiv</source>
+        <source>Zerocoin Spend, Change in zOasis</source>
         <translation>제로코인 전송, 잔돈은 zPIV</translation>
     </message>
     <message>
@@ -4279,7 +4279,7 @@ Please be patient...</source>
 <context>
     <name>ZOASISControlDialog</name>
     <message>
-        <source>Select zPiv to Spend</source>
+        <source>Select zOasis to Spend</source>
         <translation>전송할 zPIV 선택</translation>
     </message>
     <message>
@@ -4291,8 +4291,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zOasis</source>
+        <translation>zOasis</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
