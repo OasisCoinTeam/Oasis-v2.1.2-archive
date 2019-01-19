@@ -16,6 +16,7 @@
 #include "util.h"
 #include <boost/filesystem.hpp>
 #include <boost/lexical_cast.hpp>
+#include "spork.h"
 
 CBudgetManager budget;
 CCriticalSection cs_budget;
@@ -32,7 +33,7 @@ int GetBudgetPaymentCycleBlocks()
     if (Params().NetworkID() == CBaseChainParams::MAIN) return 43200;
     //for testing purposes
 
-    return 144; //ten times per day
+    return 480; // twice a day in testnet
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf)
@@ -832,47 +833,31 @@ std::string CBudgetManager::GetRequiredPaymentsString(int nBlockHeight)
 
 CAmount CBudgetManager::GetTotalBudget(int nHeight)
 {
-    if (chainActive.Tip() == NULL) return 0;
+    CAmount nSubsidy = 0;
+    CAmount totalBudget = 0;
+    if (chainActive.Tip() == NULL) return totalBudget;
+
+    nSubsidy = GetBlockValue(nHeight);
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d): GetBlockValue(%d) returned %f COINs\n", nHeight, nHeight, nSubsidy / COIN);
+
+    // Define governance budget as 20% of the block value
+    totalBudget = ((nSubsidy / 100) * 20) * GetBudgetPaymentCycleBlocks();
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 146;
+      // Increase the budget in testnet 10x to make it more exciting
+      totalBudget = totalBudget * 10;
     }
 
-    //get block value and calculate from that
-    CAmount nSubsidy = 0;
-    if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
-        nSubsidy = 50 * COIN;
-    } else if (nHeight <= 302399 && nHeight > Params().LAST_POW_BLOCK()) {
-        nSubsidy = 50 * COIN;
-    } else if (nHeight <= 345599 && nHeight >= 302400) {
-        nSubsidy = 45 * COIN;
-    } else if (nHeight <= 388799 && nHeight >= 345600) {
-        nSubsidy = 40 * COIN;
-    } else if (nHeight <= 431999 && nHeight >= 388800) {
-        nSubsidy = 35 * COIN;
-    } else if (nHeight <= 475199 && nHeight >= 432000) {
-        nSubsidy = 30 * COIN;
-    } else if (nHeight <= 518399 && nHeight >= 475200) {
-        nSubsidy = 25 * COIN;
-    } else if (nHeight <= 561599 && nHeight >= 518400) {
-        nSubsidy = 20 * COIN;
-    } else if (nHeight <= 604799 && nHeight >= 561600) {
-        nSubsidy = 15 * COIN;
-    } else if (nHeight <= 647999 && nHeight >= 604800) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight >= 648000) {
-        nSubsidy = 5 * COIN;
-    } else {
-        nSubsidy = 0 * COIN;
-    }
+    LogPrint("masternode","CBudgetManager::GetTotalBudget(%d) returning %f COINs\n", nHeight, totalBudget / COIN);
+    return totalBudget;
+}
 
-    // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-    if (nHeight <= 172800) {
-        return 648000 * COIN;
-    } else {
-        return ((nSubsidy / 100) * 10) * 1440 * 30;
-    }
+unsigned long getVetoHash(const std::string& str)
+{
+    unsigned long hash = 1;
+    for (size_t i = 0; i < str.size(); ++i)
+        hash = 13 * hash + (unsigned char)str[i];
+    return hash;
 }
 
 void CBudgetManager::NewBlock()
@@ -1405,6 +1390,20 @@ bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
         return false;
     }
 
+    CTxDestination address1;
+    ExtractDestination(address, address1);
+    CBitcoinAddress address2(address1);
+    // create a unique string for the proposal
+    std::string proposalStr = strProposalName +"/"+ strURL +"/"+ address2.ToString();
+    int vetoHash = getVetoHash(proposalStr) % 2000000000;
+
+    LogPrint("mnbudget", "CBudgetProposal::IsValid Proposal '%s' has VETO hash %d\n", proposalStr, vetoHash);
+    if (GetSporkValue(SPORK_12_PROPOSAL_VETO) == vetoHash) {
+        strError = "Proposal Veto";
+        return false;
+    }
+
+
     if (nBlockStart < 0) {
         strError = "Invalid Proposal";
         return false;
@@ -1415,7 +1414,7 @@ bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
         return false;
     }
 
-    if (nAmount < 10 * COIN) {
+    if (nAmount < 2 * COIN) {
         strError = "Proposal " + strProposalName + ": Invalid nAmount";
         return false;
     }
@@ -1453,7 +1452,7 @@ bool CBudgetProposal::IsValid(std::string& strError, bool fCheckCollateral)
 
     //can only pay out 10% of the possible coins (min value of coins)
     if (nAmount > budget.GetTotalBudget(nBlockStart)) {
-        strError = "Proposal " + strProposalName + ": Payment more than max";
+        strError = "Proposal " + strProposalName + ": Payment more than max (" + std::to_string(budget.GetTotalBudget(nBlockStart) / COIN) + ")";
         return false;
     }
 
