@@ -238,12 +238,12 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x33;
+        pchMessageStart[0] = 0xb3;
         pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x56;
+        pchMessageStart[2] = 0x66;
         pchMessageStart[3] = 0xca;
         vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
-        nDefaultPort = 6600;
+        nDefaultPort = 6606;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
