@@ -1720,7 +1720,7 @@ color:#fff;
 /**************************** TRANSACTION DETAILS DIALOG ********************************/
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
-border:1px solid #d7d7d7;
+border:1px solid #8629B5;
 }
 
 /********************************* CALENDAR WIDGET **************************************/
