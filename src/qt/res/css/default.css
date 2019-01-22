@@ -11,41 +11,41 @@ padding:0;
 }
 
 QStatusBar {
-background-color:#484B53;
+background-color: #2D034D;
 }
 
 .QFrame {
 background-color:transparent;
-border:0px solid #000;
+border:0px solid #8629B5;
 font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 QMenuBar {
-background-color:#2f3137;
+background-color:#2D034D;
 font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 QMenuBar::item {
-background-color:#2f3137;
+background-color:#2D034D;
 color:#fff;
 }
 
 QMenuBar::item:selected {
-background-color:#363940;
+background-color:#8629B5;
 }
 
 QTabBar::tab {
-background:#2f3137;
+background:#2D034D;
 color:#fff;
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover {
-background:#42464e;
+background:#8629B5;
 color:#fff;
 }
 
 QMenu {
-background-color:#363940;
+background-color:#2D034D;
 }
 
 QMenu::item {
@@ -53,20 +53,20 @@ color:#fff;
 }
 
 QMenu::item:selected {
-background-color:#42464e;
+background-color:#8629B5;
 color:#fff;
 }
 
 QToolBar {
-background-color:#2f3137;
-border:0px solid #fff;
+background-color:#2D034D;
+border:0px solid #8629B5;
 padding:0;
 margin:0;
 }
 
 QToolBar > QToolButton {
-background-color:#363940;
-border:0px solid #fff;
+background-color:#2D034D;
+border:0px solid #8629B5;
 font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 min-height:2.5em;
 padding: 0em 1em;
@@ -74,24 +74,24 @@ color:#fff;
 }
 
 QToolBar > QToolButton:checked {
-background-color:#42464e;
+background-color:#2D034D;
 color:#fff;
 font-weight:bold;
 }
 
 QMessageBox {
-background-color:#2f3137;
+background-color:#2D034D;
 }
 
 QProgressBar {
-color:#c0ad4c;
+color:#FFF832;
 border:0px solid grey;
 border-radius:3px;
 background-color:transparent;
 }
 
 QProgressBar::chunk {
-background-color:#2f3137;
+background-color:#FF721A;
 width: 20px;
 }
 
@@ -105,7 +105,7 @@ border:1px solid #2b2e33;
 }
 
 QTabBar {
-background-color:#2f3137;
+background-color:transparent;
 color:#fff;
 }
 
@@ -153,7 +153,7 @@ color:#ffffff;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
-border: 1px solid #42464e;
+border: 1px solid #8629B5;
 font-size:11px;
 min-height:25px;
 outline:0;
@@ -174,8 +174,8 @@ background-color:#363940;
 /****************************************************************************************/
 
 QPushButton { /* Global Button Style */
-background-color:#2f3137;
-border: 1px solid #7d8185;
+background-color:#2D034D;
+border: 1px solid #8629B5;
 border-radius:3px;
 color:#ffffff;
 font-size:12px;
@@ -187,8 +187,8 @@ padding-bottom:5px;
 }
 
 QPushButton:hover {
-background-color:#363940;
-border: 1px solid #7d8185;
+background-color:#8629B5;
+border: 1px solid #8629B5;
 }
 
 QPushButton:focus {
@@ -197,13 +197,13 @@ outline:none;
 }
 
 QPushButton:pressed {
-background-color:#4a4c53;
+background-color:#FF00C1;
 }
 
 QComboBox { /* Dropdown Menus */
 border:1px solid #333;
 padding: 3px 5px 3px 5px;
-background:#363940;
+    background-color:#2D034D;
 min-height:25px;
 color:#fff;
 }
@@ -312,7 +312,7 @@ outline:0;
 
 QHeaderView::section { /* Table Header Sections */
 qproperty-alignment:center;
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 0.25, stop: 0 #2f3137, stop: 1 #42464e);
+background-color:transparent;
 color:#fff;
 min-height:25px;
 font-weight:bold;
@@ -386,12 +386,12 @@ margin:0px 18px 0px 18px;
 
 
 QScrollBar::handle:vertical { /* Scroll Bar Slider - vertical */
-background:#e0e0e0;
+background:#8629B5;
 min-height:10px;
 }
 
 QScrollBar::handle:horizontal { /* Scroll Bar Slider - horizontal */
-background:#e0e0e0;
+background:#8629B5;
 min-width:10px;
 }
 
@@ -472,19 +472,19 @@ border-radius:3px;
 /**************************** DIALOG BOXES **********************************************/
 
 QDialog {
-background-color: #363940;
+border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
 }
 
 QDialog .QTabWidget {
-border-bottom:1px solid #fff;
+border-bottom:1px solid #8629B5;
 }
 
 QDialog .QTabWidget::pane {
-border: 1px solid #d7d7d7;
+border: 1px solid #8629B5;
 }
 
 QDialog .QTabWidget QTabBar::tab {
-background-color:#42464e;
+background-color:transparent;
 color:#000000;
 padding-left:10px;
 padding-right:10px;
@@ -629,7 +629,7 @@ border:1px solid #4a4c53;
 /**************************** SEND AND RECEIVE DIALOG ***********************************/
 
 QWidget#AddressBookPage {
-background-color:#363940;
+border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
 }
 
 QWidget#AddressBookPage QPushButton#newAddress { /* New Address Button */
@@ -697,15 +697,18 @@ min-width:260px;
 }
 
 /**************************** Privacy Dialog ********************************************/
+QWidget#PrivacyDialog {
+    border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
+}
 
 QWidget#PrivacyDialog QFrame {
 background-color:transparent;
-border:1px solid #000;
+border:1px solid #8629B5;
 }
 
 QWidget#PrivacyDialog QFrame#labelMintStatus {
 /* background-color:transparent; */
-background-color:#2F3137;
+background-color:transparent;
 /* border-style: inset; */
 /* border-width:2; */
 /* border:2px solid #00; */
@@ -876,7 +879,7 @@ QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDi
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Phore text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About Oasis text */
 margin-right:10px;
 }
 
@@ -1277,7 +1280,7 @@ color: #fff; /* CSS Voodoo - set to -66px to hide default transaction icons */
 /**************************** SEND DIALOG ***********************************************/
 
 QDialog#SendCoinsDialog {
-background-color:#42464e;
+background-color:transparent;
 }
 
 QDialog#SendCoinsDialog .QFrame#frameCoinControl { /* Coin Control Section */
@@ -1596,7 +1599,7 @@ QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::indicator { /* Coin
 /**************************** RECEIVE COINS *********************************************/
 
 QWidget#ReceiveCoinsDialog {
-background-color:#42464e;
+background-color:transparent;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame2 .QLabel#label_2 { /* Label Label */
