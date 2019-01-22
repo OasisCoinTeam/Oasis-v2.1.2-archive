@@ -80,7 +80,7 @@ font-weight:bold;
 }
 
 QMessageBox {
-background-color:#2D034D;
+background-color:transparent;
 }
 
 QProgressBar {
