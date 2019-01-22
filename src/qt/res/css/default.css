@@ -2,7 +2,6 @@
 /*************** [COLOR CODES] GREEN:#2f3137 LIGHT GREEN:#42464e *****************/
 /****************************************************************************************/
 
-
 WalletFrame {
 border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #fff;
@@ -58,14 +57,13 @@ color:#fff;
 }
 
 QToolBar {
-background-color:#2D034D;
+border-image: url(':/images/walletFrame_bg-navbar') 0 0 0 0 stretch stretch;
 border:0px solid #8629B5;
 padding:0;
 margin:0;
 }
 
 QToolBar > QToolButton {
-background-color:#2D034D;
 border:0px solid #8629B5;
 font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 min-height:2.5em;
