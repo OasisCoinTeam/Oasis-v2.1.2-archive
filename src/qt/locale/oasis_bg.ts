@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your Oasis addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите Oasis адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your OASIS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите OASIS адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Oasis addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Oasis адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your OASIS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите OASIS адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Oasis will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your OASISs from being stolen by malware infecting your computer.</source>
-        <translation>Oasis сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Oasis от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>OASIS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>OASIS сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия OASIS от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OASIS&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ OASIS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ PIV&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -247,8 +247,8 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Oasis address to sign the message with</source>
-        <translation>Oasis адреса, с който да подпишете съобщението</translation>
+        <source>The OASIS address to sign the message with</source>
+        <translation>OASIS адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Oasis address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Oasis адрес</translation>
+        <source>Sign the message to prove you own this OASIS address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този OASIS адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The Oasis address the message was signed with</source>
-        <translation>Oasis адреса, който е подписано съобщението</translation>
+        <source>The OASIS address the message was signed with</source>
+        <translation>OASIS адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Oasis address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Oasis адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified OASIS address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения OASIS адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Oasis Core</source>
-        <translation>Oasis Ядро</translation>
+        <source>OASIS Core</source>
+        <translation>OASIS Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a Oasis address</source>
-        <translation>Изпратете монети до Oasis адрес</translation>
+        <source>Send coins to a OASIS address</source>
+        <translation>Изпратете монети до OASIS адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and oasis: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  Oasis:URI)</translation>
+        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  OASIS:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zOASIS and Obfuscation</source>
-        <translation>Поверителни действия за zOASIS и Обфускация</translation>
+        <source>Privacy Action for zPIV and Obfuscation</source>
+        <translation>Поверителни действия за zPIV и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Oasis Core</source>
-        <translation>&amp;Относно Oasis Ядрото</translation>
+        <source>&amp;About OASIS Core</source>
+        <translation>&amp;Относно OASIS Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Oasis Core</source>
-        <translation>Информациза за Oasis Ядрото</translation>
+        <source>Show information about OASIS Core</source>
+        <translation>Информациза за OASIS Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for Oasis</source>
-        <translation>Промени Oasis конфигурацията</translation>
+        <source>Modify configuration options for OASIS</source>
+        <translation>Промени OASIS конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your Oasis addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте Oasis адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your OASIS addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте OASIS адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Oasis addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Oasis адреси</translation>
+        <source>Verify messages to ensure they were signed with specified OASIS addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните OASIS адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a Oasis: URI or payment request</source>
-        <translation>Отвори Oasis:URI платежно нареждане</translation>
+        <source>Open a OASIS: URI or payment request</source>
+        <translation>Отвори OASIS:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Oasis Core help message to get a list with possible Oasis command-line options</source>
-        <translation>Разкрийте Помощ за Oasis Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the OASIS Core help message to get a list with possible OASIS command-line options</source>
+        <translation>Разкрийте Помощ за OASIS Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Oasis Core client</source>
-        <translation>Клиент Oasis Ядро</translation>
+        <source>OASIS Core client</source>
+        <translation>Клиент OASIS Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Oasis network</source>
-        <translation><numerusform>%n активни връзки към Oasis мрежата</numerusform><numerusform>%n активни свръзки към Oasis мрежата</numerusform></translation>
+        <source>%n active connection(s) to OASIS network</source>
+        <translation><numerusform>%n активни връзки към OASIS мрежата</numerusform><numerusform>%n активни свръзки към OASIS мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (oasis.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (oasis.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (pivx.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Oasis address.</source>
-        <translation>Зададения адрес "%1"не е валиден Oasis адрес.</translation>
+        <source>The entered address "%1" is not a valid OASIS address.</source>
+        <translation>Зададения адрес "%1"не е валиден OASIS адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Oasis Core</source>
-        <translation>Oasis Ядро</translation>
+        <source>OASIS Core</source>
+        <translation>OASIS Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Oasis Core</source>
-        <translation>Относно Oasis Ядрото</translation>
+        <source>About OASIS Core</source>
+        <translation>Относно OASIS Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Oasis Core.</source>
-        <translation>Добре Дошли в Oasis Ядрото</translation>
+        <source>Welcome to OASIS Core.</source>
+        <translation>Добре Дошли в OASIS Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Oasis Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Oasis Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where OASIS Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде OASIS Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Oasis Core will download and store a copy of the Oasis block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Oasis Ядрото ще изтегли и запише копие на целия Oasis блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>OASIS Core will download and store a copy of the OASIS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>OASIS Ядрото ще изтегли и запише копие на целия OASIS блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Oasis Core</source>
-        <translation>Oasis Ядро</translation>
+        <source>OASIS Core</source>
+        <translation>OASIS Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Oasis addresses after it matures.
-To Add: enter percentage to give and Oasis address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other OASIS addresses after it matures.
+To Add: enter percentage to give and OASIS address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Oasis адреси.
-Да Добавите: въведете процент и задайте Oasis адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други OASIS адреси.
+Да Добавите: въведете процент и задайте OASIS адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1548,47 +1548,47 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 OASIS</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 OASIS</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 PIV</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 OASIS</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 OASIS</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 PIV</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 OASIS to anonymize 10000 OASIS</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 OASIS за да скриете 10000 OASIS</translation>
+        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 PIV за да скриете 10000 PIV</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 OASIS to anonymize 10000 OASIS</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 OASIS за да скриете 10000 OASIS</translation>
+        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 PIV за да скриете 10000 PIV</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на OASIS. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на PIV. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 OASIS per 10000 OASIS you anonymize.</source>
-        <translation>0.1 OASIS за 10000 скрити OASIS</translation>
+        <source>0.1 PIV per 10000 PIV you anonymize.</source>
+        <translation>0.1 PIV за 10000 скрити PIV</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Oasis's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening OASIS's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Oasis's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening OASIS's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Oasis's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening OASIS's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the Oasis client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори Oasis порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the OASIS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори OASIS порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start Oasis after logging in to the system.</source>
-        <translation>Стартирай Oasis автоматично след влизане в системата.</translation>
+        <source>Automatically start OASIS after logging in to the system.</source>
+        <translation>Стартирай OASIS автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Oasis on system login</source>
-        <translation>&amp;Стартирай Oasis заедно с операционната система</translation>
+        <source>&amp;Start OASIS on system login</source>
+        <translation>&amp;Стартирай OASIS заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,34 +1702,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Oasis.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting OASIS.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/oasis-project/oasis-project-translations</source>
+https://www.transifex.com/pivx-project/pivx-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/oasis-project/oasis-project-translations</translation>
+https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming OASIS which get automatically converted to zOASIS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите OASIS, който автоматично да се конвертира в zOASIS посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите PIV, който автоматично да се конвертира в zPIV посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zOASIS</source>
-        <translation>Процент автоматично сечени zOASIS</translation>
+        <source>Percentage of autominted zPIV</source>
+        <translation>Процент автоматично сечени zPIV</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough OASIS for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zOASIS докато не се съберат достатъчно OASIS за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zPIV докато не се съберат достатъчно PIV за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zOASIS Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zOASIS</translation>
+        <source>Preferred Automint zPIV Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zPIV</translation>
     </message>
     <message>
-        <source>Connect to the Oasis network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с Oasis мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the OASIS network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с OASIS мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1859,8 +1859,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>От</translation>
     </message>
     <message>
-        <source>OASIS Balances</source>
-        <translation>OASIS Баланс</translation>
+        <source>PIV Balances</source>
+        <translation>PIV Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Oasis network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Oasis мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the OASIS network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с OASIS мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,12 +1927,12 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>OASIS:</source>
-        <translation>OASIS:</translation>
+        <source>PIV:</source>
+        <translation>PIV:</translation>
     </message>
     <message>
-        <source>zOASIS:</source>
-        <translation>zOASIS:</translation>
+        <source>zPIV:</source>
+        <translation>zPIV:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1974,12 +1974,12 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start oasis: click-to-pay handler</source>
-        <translation>Провал при стартирането на oasis: click-to-pay обработвател</translation>
+        <source>Cannot start pivx: click-to-pay handler</source>
+        <translation>Провал при стартирането на pivx: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Oasis address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Oasis адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid OASIS address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден OASIS адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2060,23 +2060,23 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
-        <translation>OASIS скрити посредством Зерокойн протокола</translation>
+        <source>PIV which were anonymized via Zerocin Protocol</source>
+        <translation>PIV скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin OASIS (zOASIS)</source>
-        <translation>Zerocoin OASIS (zOASIS)</translation>
+        <source>Zerocoin PIV (zPIV)</source>
+        <translation>Zerocoin PIV (zPIV)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Oasis network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Oasis мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the OASIS network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с OASIS мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
+        <source>Enter an amount of Oasis to convert to zOasis</source>
         <translation>Въведете колко OASIS  да се конвертират в zOASIS</translation>
     </message>
     <message>
@@ -2088,16 +2088,16 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zOASIS</source>
-        <translation>zOASIS</translation>
+        <source>zPIV</source>
+        <translation>zPIV</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 OASIS</source>
-        <translation>0.000 000 00 OASIS</translation>
+        <source>0.000 000 00 PIV</source>
+        <translation>0.000 000 00 PIV</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2132,12 +2132,12 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zOASIS Контрол</translation>
+        <source>zOasis Control</source>
+        <translation>zPIV Контрол</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>Избрани zOASIS:</translation>
+        <source>zOasis Selected:</source>
+        <translation>Избрани zPIV:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zOASIS</source>
-        <translation>0 zOASIS</translation>
+        <source>0 zPIV</source>
+        <translation>0 zPIV</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Oasis address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The OASIS address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zOASIS от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zPIV от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2376,8 +2376,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Oasis network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в Oasis мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the OASIS network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в OASIS мрежата.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zOASIS in </source>
-        <translation>zOASIS в</translation>
+        <source> zPIV in </source>
+        <translation>zPIV в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2431,7 +2431,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Invalid Oasis Address</source>
-        <translation>Невалиден Oasis адрес</translation>
+        <translation>Невалиден OASIS адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2474,8 +2474,8 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
-        <translation>zOASIS Похарчени #:</translation>
+        <source>zOasis Spend #: </source>
+        <translation>zPIV Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2498,8 +2498,8 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>Сечене на zOASIS</translation>
+        <source>zOasis Mint</source>
+        <translation>Сечене на zPIV</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Oasis address (e.g. %1)</source>
-        <translation>Задайте Oasis адрес (например %1)</translation>
+        <source>Enter a OASIS address (e.g. %1)</source>
+        <translation>Задайте OASIS адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Oasis debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори Oasis дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the OASIS debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори OASIS дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the Oasis RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на Oasis.</translation>
+        <source>Welcome to the OASIS RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на OASIS.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Oasis network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Oasis мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the OASIS network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по OASIS мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Oasis network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Oasis мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the OASIS network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по OASIS мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3127,8 +3127,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 OASIS</source>
-        <translation>0 OASIS</translation>
+        <source>0 PIV</source>
+        <translation>0 PIV</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3179,15 +3179,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uOASISs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uOASISs in fee,&lt;br /&gt;while "at least" pays 1000 uOASISs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uOASIS и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uOASIS входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uOASIS. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uPIV и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPIV входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uPIV. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uOASISs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uOASISs in fee,&lt;br /&gt;while "total at least" pays 1000 uOASISs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uOASIS и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uOASIS входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uOASIS. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uPIV и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPIV входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPIV. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Oasis transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for OASIS transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3235,8 +3235,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized OASIS</source>
-        <translation>Анонимизиран OASIS</translation>
+        <source>Anonymized PIV</source>
+        <translation>Анонимизиран PIV</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3295,8 +3295,8 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid Oasis address</source>
-        <translation>Предупреждение: Невалиден OASIS адрес</translation>
+        <source>Warning: Invalid OASIS address</source>
+        <translation>Предупреждение: Невалиден PIV адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Oasis address to send the payment to</source>
-        <translation>Oasis адреса - получател на плащането</translation>
+        <source>The OASIS address to send the payment to</source>
+        <translation>OASIS адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Oasis: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Oasis network.</source>
-        <translation>Съобщение, което е било прикачено към Oasis:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Oasis мрежата.</translation>
+        <source>A message that was attached to the OASIS: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the OASIS network.</source>
+        <translation>Съобщение, което е било прикачено към OASIS:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по OASIS мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Oasis Core is shutting down...</source>
-        <translation>Изключване на Oasis Ядрото...</translation>
+        <source>OASIS Core is shutting down...</source>
+        <translation>Изключване на OASIS Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Oasis address to sign the message with</source>
-        <translation>Oasis адреса, с който да подпишете съобщението</translation>
+        <source>The OASIS address to sign the message with</source>
+        <translation>OASIS адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Oasis address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Oasis адрес</translation>
+        <source>Sign the message to prove you own this OASIS address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този OASIS адрес</translation>
     </message>
     <message>
-        <source>The Oasis address the message was signed with</source>
-        <translation>Oasis адреса, който е подписано съобщението</translation>
+        <source>The PIVX address the message was signed with</source>
+        <translation>PIVX адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Oasis address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Oasis адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения PIVX адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Oasis Core</source>
-        <translation>Oasis Ядро</translation>
+        <source>OASIS Core</source>
+        <translation>PIVX Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Oasis Core developers</source>
-        <translation>Oasis Core разработчици</translation>
+        <source>The OASIS Core developers</source>
+        <translation>OASIS Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3955,32 +3955,32 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Конвертиран OASIS във zOASIS</translation>
+        <source>Converted Oasis tozOasis</source>
+        <translation>Конвертиран PIV във zPIV</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
-        <translation>Похарчени zOASIS</translation>
+        <source>Spent zOasis</source>
+        <translation>Похарчени zPIV</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Получен OASIS от zOASIS</translation>
+        <source>Received Piv from zOasis</source>
+        <translation>Получен PIV от zPIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Исечено ресто като zOASIS от похарчените zOASIS</translation>
+        <source>Minted Change as zOasis from zOasis Spend</source>
+        <translation>Исечено ресто като zPIV от похарчените zPIV</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Конвертирани zOASIS в OASIS</translation>
+        <source>Converted zOasis to Piv</source>
+        <translation>Конвертирани zPIV в PIV</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zOASIS Акумулатор</translation>
+        <source>zOasis Accumulator</source>
+        <translation>zPIV Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4086,8 +4086,8 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Получен OASIS от zOASIS</translation>
+        <source>Received Piv from zOasis</source>
+        <translation>Получен PIV от zPIV</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4098,8 +4098,8 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Харчене на Zerocoin, Ресто в zOASIS</translation>
+        <source>Zerocoin Spend, Change in zOasis</source>
+        <translation>Харчене на Zerocoin, Ресто в zPIV</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4215,8 +4215,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 OASIS.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 OASIS.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 PIV.</translation>
     </message>
 </context>
 <context>
@@ -4259,10 +4259,10 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZOASISControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Изберете zOASIS за Изпращане</translation>
+        <source>Select zOasis to Spend</source>
+        <translation>Изберете zPIV за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4273,8 +4273,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zOASIS</translation>
+        <source>zOasis</source>
+        <translation>zPIV</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all Oasis specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква Oasis функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all PIVX specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква PIVX функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4344,12 +4344,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in OASIS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в OASIS/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в PIV/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in OASIS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в OASIS/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в PIV/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

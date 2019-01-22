@@ -59,9 +59,6 @@
                 <bold>true</bold>
                </font>
               </property>
-              <property name="text">
-               <string>OASIS Balances</string>
-              </property>
              </widget>
             </item>
             <item>
