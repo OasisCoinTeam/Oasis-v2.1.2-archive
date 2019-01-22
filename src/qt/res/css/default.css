@@ -80,7 +80,7 @@ font-weight:bold;
 }
 
 QMessageBox {
-background-color:transparent;
+background-color:#2D034D;
 }
 
 QProgressBar {
@@ -229,7 +229,7 @@ border-image: url(':/images/downArrow') 0 0 0 0 stretch stretch;
 
 QComboBox QListView {
 background:#2D034D;
-border:1px solid #333;
+border:1px solid #8629B5;
 padding-right:1px;
 padding-left:1px;
 color:#fff;
@@ -754,7 +754,7 @@ outline:none;
 }
 
 QWidget#PrivacyDialog QPushButton:pressed {
-border:1px solid #333;
+border:1px solid #8629B5;
 }
 
 QWidget#PrivacyDialog QProgressBar#obfuscationProgress { /* Obfuscation Completion */
@@ -1726,7 +1726,7 @@ border:1px solid #d7d7d7;
 /********************************* CALENDAR WIDGET **************************************/
 
 QCalendarView {
-border:1px solid #333;
+border:1px solid #8629B5;
 }
 
 QCalendarWidget QWidget#qt_calendar_navigationbar { /* Calendar widget navigation bar */
