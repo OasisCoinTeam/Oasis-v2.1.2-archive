@@ -147,11 +147,9 @@ color:#ffffff;
 
 .QCheckBox { /* Checkbox Labels */
 color:#ffffff;
-background-color:transparent;
 }
 
 .QCheckBox:hover {
-background-color:transparent;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
@@ -1367,7 +1365,6 @@ border:1px solid #4a4c53;
 QDialog#SendCoinsDialog .QCheckBox#checkUseObfuscation { /* Obfuscation Checkbox */
 color:#fff;
 font-weight:bold;
-background:transparent;
 /*background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 rgba(248, 246, 246, 128), stop: 1 rgba(0, 0, 0, 0));*/
 border-radius:5px;
 padding-top:20px;
@@ -1377,7 +1374,6 @@ padding-bottom:18px;
 QDialog#SendCoinsDialog .QCheckBox#checkSwiftTX { /* SwiftTX Checkbox */
 color:#fff;
 font-weight:bold;
-background:transparent;
 /*background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 rgba(248, 246, 246, 128), stop: 1 rgba(0, 0, 0, 0));*/
 border-radius:5px;
 padding-top:20px;
