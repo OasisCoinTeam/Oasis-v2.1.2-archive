@@ -19,13 +19,13 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "PIVX"
-            VALUE "FileDescription",    "OASIS Core (OSS GUI client for PIVX)"
+            VALUE "CompanyName",        "OASIS"
+            VALUE "FileDescription",    "OASIS Core (OSS GUI client for OASIS)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "pivx-qt"
+            VALUE "InternalName",       "oasis-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "pivx-qt.exe"
+            VALUE "OriginalFilename",   "oasis-qt.exe"
             VALUE "ProductName",        "OASIS Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
