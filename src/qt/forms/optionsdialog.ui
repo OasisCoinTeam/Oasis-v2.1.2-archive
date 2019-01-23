@@ -139,7 +139,7 @@
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="text">
-          <string>Enable zPIV Automint</string>
+          <string>Enable zOASIS Automint</string>
          </property>
         </widget>
        </item>
