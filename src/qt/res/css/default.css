@@ -110,7 +110,7 @@ background-color:transparent;
 
 QWidget {
 selection-background-color:#2D034D; /* Object highlight color */
-selection-color:#FF00C1;
+selection-color:#FF721A;
 outline:0; /* Remove Annoying Focus Rectangle */
 }
 
@@ -147,7 +147,7 @@ color:#ffffff;
 .QCheckBox:hover {
 }
 .QCheckBox:checked {
-    color: #FF00C1;
+    color: #FF721A;
 }
 
 .QValidatedLineEdit, .QLineEdit { /* Text Entry Fields */
@@ -195,7 +195,7 @@ outline:none;
 }
 
 QPushButton:pressed {
-background-color:#FF00C1;
+background-color:#FF721A;
 }
 
 QComboBox { /* Dropdown Menus */
@@ -327,12 +327,12 @@ border-right:0;
 }
 
 .QScrollArea {
-background:transparent;
+background-color:transparent;
 border:0;
 }
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
-background:transparent;
+background-color:transparent;
 border:1px solid #8629B5;
 }
 
@@ -343,8 +343,9 @@ font-size:12px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
-background-color:#FF00C1;
-color:#fff;
+    background-color:#FF721A;
+    color:#ffffff;
+    font-weight: bold;
 }
 
 QTableWidget { /* Table Background */
@@ -360,6 +361,7 @@ background-color:transparent;
 QTreeWidget { /* Tree Background */
 background-color:transparent;
 color:#fff;
+
 }
 
 QScrollBar { /* Scroll Bar */
@@ -535,7 +537,7 @@ font-weight:bold;
 QDialog#OpenURIDialog QPushButton#selectFileButton { /* ... Button */
 background-color:#2D034D;
 border:1px solid #8629B5;
-color:#FF00C1;
+color:#FF721A;
 padding-left:10px;
 padding-right:10px;
 }
@@ -870,7 +872,7 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 border:0;
 }
 
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Phore Contents */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Oasis Contents */
 margin-left:10px;
     background-color:transparent;
 
@@ -1395,7 +1397,7 @@ padding-right:5px;
 }
 
 QStackedWidget#SendCoinsEntry .QFrame#SendCoins .QLabel#amountLabel {
-background-color:#FF00C1;
+background-color:#FF721A;
 }
 
 QStackedWidget#SendCoinsEntry .QValidatedLineEdit#payTo { /* Pay To Input Field */
@@ -1559,7 +1561,7 @@ padding-right:5px;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame2 .QLabel#label { /* Amount Label */
-background-color:#FF00C1;
+background-color:#FF721A;
 min-width:102px;
 color:#ffffff;
 font-weight:bold;
@@ -1660,7 +1662,7 @@ QLabel#transactionSumLabel { /* Example of setObjectName for widgets without nam
 color:#fff;
 font-weight:bold;
 }
- 
+
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
 color:#fff;
 }
