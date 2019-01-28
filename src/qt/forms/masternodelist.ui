@@ -124,7 +124,7 @@
            </column>
            <column>
             <property name="text">
-             <string>Address</string>
+             <string>IP / Hostname</string>
             </property>
            </column>
            <column>
