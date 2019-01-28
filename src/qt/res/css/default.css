@@ -343,7 +343,7 @@ font-size:12px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
-background-color:#2D034D;
+background-color:#FF00C1;
 color:#fff;
 }
 
