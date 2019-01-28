@@ -1522,47 +1522,26 @@ color:transparent;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget { /* Coin Control Widget Container */
-outline:0;
-background-color:#2D034D;
-border:1px solid #fff;
+
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
+    background-color: #2D034D;
 }
 
-QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
-background-color:#2D034D;
-color:#fff;
-}
-
-QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:checked { /* Coin Control Item (checked) */
-background-color:#2D034D;
-color:#fff;
-}
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:selected { /* Coin Control Branch Icon */
 background-image: url(':/images/qtreeview_selected');
 background-repeat:no-repeat;
 background-position:center;
-background-color:#2D034D;
-color:#fff;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:checked { /* Coin Control Branch Icon */
 background-image: url(':/images/qtreeview_selected');
 background-repeat:no-repeat;
 background-position:center;
-background-color:#2D034D;
-color:#fff;
 }
 
-QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::seperator {
-
-}
-
-QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::indicator { /* Coin Control Widget Checkbox */
-
-}
 
 /**************************** RECEIVE COINS *********************************************/
 
