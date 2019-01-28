@@ -133,8 +133,6 @@ Value getinfo(const Array& params, bool fHelp)
     else if (mapHashedBlocks.count(chainActive.Tip()->nHeight - 1) && nLastCoinStakeSearchInterval)
         nStaking = true;
     obj.push_back(Pair("staking status", (nStaking ? "Staking Active" : "Staking Not Active")));
-    obj.push_back(Pair("budget_cycle_coins", budget.GetTotalBudget((int)chainActive.Height()) / COIN));
-    obj.push_back(Pair("budget_cycle_blocks", (int)GetBudgetPaymentCycleBlocks()));
     obj.push_back(Pair("errors", GetWarnings("statusbar")));
     return obj;
 }
