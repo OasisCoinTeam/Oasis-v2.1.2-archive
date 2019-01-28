@@ -1,8 +1,3 @@
-/****************************************************************************************/
-/*************** [COLOR CODES] GREEN:#2D034D LIGHT GREEN:#2D034D *****************/
-/****************************************************************************************/
-
-
 WalletFrame {
 border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
 border-top:0px solid #fff;
@@ -496,6 +491,7 @@ border-top: 1px solid #8629B5;
 
 QDialog .QTabWidget QTabBar::tab:first {
 border-left: 1px solid #8629B5;
+border-right: 1px solid #8629B5;
 }
 
 QDialog .QTabWidget QTabBar::tab:last {
@@ -503,12 +499,12 @@ border-right: 1px solid #8629B5;
 }
 
 QDialog .QTabWidget QTabBar::tab:selected, QDialog .QTabWidget QTabBar::tab:hover {
-background-color:#2D034D;
+background-color:#8629B5;
 color:#fff;
 }
 
 QDialog .QTabWidget .QWidget {
-background-color:#2D034D;
+background-color:transparent;
 color:#fff;
 }
 
@@ -567,6 +563,7 @@ padding-right:10px;
 QDialog#SignVerifyMessageDialog QPlainTextEdit { /* Message Signing Text */
 border:1px solid #8629B5;
 background-color:#2D034D;
+color: #ffffff;
 }
 
 QDialog#SignVerifyMessageDialog QPushButton#pasteButton_SM { /* Paste Button */
@@ -627,6 +624,10 @@ QDialog#SignVerifyMessageDialog QPushButton#clearButton_VM:pressed {
 border:1px solid #8629B5;
 }
 
+QDialog#SignVerifyMessageDialog QTabWidget#tabWidget { /* Message Signing Text */
+    border:1px solid #8629B5;
+    background-color:transparent;
+}
 /**************************** SEND AND RECEIVE DIALOG ***********************************/
 
 QWidget#AddressBookPage {
