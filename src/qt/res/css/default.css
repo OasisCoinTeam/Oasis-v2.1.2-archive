@@ -508,6 +508,7 @@ background-color:transparent;
 color:#fff;
 }
 
+
 QDialog .QTabWidget .QWidget QAbstractSpinBox {
 min-height:15px;
 }
@@ -624,10 +625,8 @@ QDialog#SignVerifyMessageDialog QPushButton#clearButton_VM:pressed {
 border:1px solid #8629B5;
 }
 
-QDialog#SignVerifyMessageDialog QTabWidget#tabWidget { /* Message Signing Text */
-    border:1px solid #8629B5;
-    background-color:transparent;
-}
+
+
 /**************************** SEND AND RECEIVE DIALOG ***********************************/
 
 QWidget#AddressBookPage {
@@ -1715,3 +1714,4 @@ color:#fff;
 QCalendarWidget QAbstractItemView:disabled { /* Calendar widget days not in month */
 color:#fff;
 }
+/**************************** MULTISIG DIALOG *******************************************/

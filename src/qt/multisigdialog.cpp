@@ -66,7 +66,7 @@ void MultisigDialog::setModel(WalletModel *model)
 
 void MultisigDialog::showTab(int index)
 {
-    ui->multisigTabWidget->setCurrentIndex(index);
+    ui->tabWidget->setCurrentIndex(index);
     this->show();
 }
 
