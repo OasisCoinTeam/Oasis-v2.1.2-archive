@@ -353,13 +353,13 @@ color:#fff;
 }
 
 QTableWidget { /* Table Background */
-background-color:#2D034D; /*#2D034D;*/
+background-color:transparent; /*#2D034D;*/
 border:1px solid #8629B5;
 }
 
 QTableWidget:focus, QTableView, QTableView:focus { /* Remove focus outline */
 outline:0;
-background-color:#2D034D;
+background-color:transparent;
 }
 
 QTreeWidget { /* Tree Background */
@@ -691,6 +691,7 @@ border:1px solid #8629B5;
 
 QWidget#AddressBookPage QTableView { /* Address Listing */
 font-size:12px;
+background-color: transparent;
 }
 
 QWidget#AddressBookPage QHeaderView::section { /* Min width for Windows fix */
