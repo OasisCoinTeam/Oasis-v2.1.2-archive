@@ -1693,4 +1693,7 @@ color:#fff;
 QCalendarWidget QAbstractItemView:disabled { /* Calendar widget days not in month */
 color:#fff;
 }
-/**************************** MULTISIG DIALOG *******************************************/
+
+QMainWindow#BlockExplorer .QWidget{
+    border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
+}
