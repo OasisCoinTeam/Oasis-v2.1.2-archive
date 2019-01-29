@@ -24,6 +24,7 @@ Decentralized blockchain voting provides for consensus based advancement of the 
 **Twitter:** <a href="https://t.me/coin_OASIS">https://t.me/coin_OASIS</a><br>
 **Explorer:** <a href="https://oasis.ccore.online/">https://oasis.ccore.online/</a><br>
 **Masternode Explorer:** <a href="https://oasis.mn.zone/">https://oasis.mn.zone/</a><br>
+**Governance:** <a href="http://oasis.mn.zone/proposals">http://oasis.mn.zone/proposals</a>(...coming Mar2019)<br>
 **Exchange:** <a href="https://altmarkets.io/trading/oasisbtc">https://altmarkets.io/trading/oasisbtc</a><br>
 
 
@@ -32,6 +33,7 @@ Decentralized blockchain voting provides for consensus based advancement of the 
 <tr><td>Algo</td><td>Xevan</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
+<tr><td>Masternode Collateral</td><td>285 OASIS</td></tr>
 <tr><td>Max Coin Supply (PoW Phase)</td><td>300,000 OASIS</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
 <tr><td>Premine</td><td>300,000 OASIS*</td></tr>
