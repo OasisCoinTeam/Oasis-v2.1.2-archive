@@ -9,15 +9,15 @@ OASIS Core integration/staging repository
 
 **OASIS Coin Masternode Cryptocurrency**
 
-**OASIS** is a fork of _PIVX_ that forked _Dash_ that forked _Bitcoin_
+OASIS is a fork of _PIVX_ that forked _Dash_ that forked _Bitcoin_
 
-**OASIS** is based on a Community Takeover of a previous MN project called _1UP_
+OASIS is based on a Community Takeover of a previous MN project called _1UP_
 
 Fast transactions featuring guaranteed zero confirmation transactions, known as _SwiftX_.
 
 Decentralized blockchain voting provides for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of **285 OASIS**.
 
-**Website:** ...coming Feb2019<br>
+**Website:** <a href="http://exploreoasis.com/">http://exploreoasis.com/</a><br>
 **BitcoinTalk:** <a href="https://bitcointalk.org/index.php?topic=4482370">https://bitcointalk.org/index.php?topic=4482370</a><br>
 **Discord:** <a href="https://discord.gg/5SgtbHK">https://discord.gg/5SgtbHK</a><br>
 **Telegram:** <a href="https://t.me/intheOASIS">https://t.me/intheOASIS</a><br>
