@@ -1,28 +1,32 @@
 <p align="center">
-	<img src="https://cdn.discordapp.com/attachments/434714258127847425/533141511907573780/oasis-no-bkgd-.png" />
+	<img src="https://cdn.discordapp.com/attachments/434714258127847425/533141511907573780/oasis-no-bkgd-.png" width=32%/>
 </p>
 
 OASIS Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/OasisCoinTeam/Oasis.svg?branch=master)](https://travis-ci.org/OasisCoinTeam/Oasis) [![GitHub version](https://badge.fury.io/gh/OasisCoinTeam%2FOASIS.svg)](https://badge.fury.io/gh/OasisCoinTeam%2FOASIS)
+[![GitHub version](https://badge.fury.io/gh/OasisCoinTeam%2FOASIS.svg)](https://badge.fury.io/gh/OasisCoinTeam%2FOASIS)
 
-OASIS Coin Masternode Cryptocurrency
+**OASIS Coin Masternode Cryptocurrency**
 
-OASIS is a fork of PIVX that forked Dash that forked Bitcoin
+**OASIS** is a fork of _PIVX_ that forked _Dash_ that forked _Bitcoin_
 
-OASIS is based on a Community Takeover of a previous MN project called 1UP
+**OASIS** is based on a Community Takeover of a previous MN project called _1UP_
 
-Fast transactions featuring guaranteed zero confirmation transactions, OASIS named it SwiftX.
+Fast transactions featuring guaranteed zero confirmation transactions, **OASIS** named it _SwiftX_.
 
-Decentralized blockchain voting (Future Implementation upon Community Vote) providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of 285 OASIS.
+Decentralized blockchain voting (Future Implementation upon Community Vote) providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of **285 OASIS**.
 
-More information at our ANN thread at BitcoinTalk - https://bitcointalk.org/index.php?topic=4482370
+**Website:** ...coming Feb2019<br>
+**BitcoinTalk:** <a href="https://bitcointalk.org/index.php?topic=4482370">https://bitcointalk.org/index.php?topic=4482370</a><br>
+**Discord:** <a href="https://discord.gg/5SgtbHK">https://discord.gg/5SgtbHK</a><br>
+**Telegram:** <a href="https://t.me/intheOASIS">https://t.me/intheOASIS</a><br>
+**Twitter:** <a href="https://t.me/coin_OASIS">https://t.me/coin_OASIS</a><br>
+**Explorer:** <a href="https://oasis.ccore.online/">https://oasis.ccore.online/</a><br>
+**Masternode Explorer:** <a href="https://oasis.mn.zone/">https://oasis.mn.zone/</a><br>
+**Exchange:** <a href="https://altmarkets.io/trading/oasisbtc">https://altmarkets.io/trading/oasisbtc</a><br>
 
-Join our Community At:
-Discord - https://discord.gg/5SgtbHK
-Telegram - https://t.me/intheOASIS
- 
+
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Xevan</td></tr>
@@ -33,9 +37,9 @@ Telegram - https://t.me/intheOASIS
 <tr><td>Premine</td><td>300,000 OASIS*</td></tr>
 </table>
 
-*120,597.644 OASIS burned upon swap completion
+<em>*120,597.644 OASIS burned upon swap completion
 
-Swap Burn Address oSXXXXoAS1SBURNADDRESSXXXXXXZK9gTD 
+Swap Burn Address </em><a href="https://oasis.ccore.online/address/osxxxxoas1sburnaddressxxxxxxzk9gtd" >oSXXXXoAS1SBURNADDRESSXXXXXXZK9gTD</a> 
 
 ##### Development Fund<br>
 https://oasis.ccore.online/address/or3faavwq3p63rc4j7ucukccydlhfdzzjp
