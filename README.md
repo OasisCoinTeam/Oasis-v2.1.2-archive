@@ -13,9 +13,9 @@ OASIS Core integration/staging repository
 
 **OASIS** is based on a Community Takeover of a previous MN project called _1UP_
 
-Fast transactions featuring guaranteed zero confirmation transactions, **OASIS** named it _SwiftX_.
+Fast transactions featuring guaranteed zero confirmation transactions, known as _SwiftX_.
 
-Decentralized blockchain voting (Future Implementation upon Community Vote) providing for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of **285 OASIS**.
+Decentralized blockchain voting provides for consensus based advancement of the current Masternode technology used to secure the network and provide the above features, each Masternode is secured with a collateral of **285 OASIS**.
 
 **Website:** ...coming Feb2019<br>
 **BitcoinTalk:** <a href="https://bitcointalk.org/index.php?topic=4482370">https://bitcointalk.org/index.php?topic=4482370</a><br>
