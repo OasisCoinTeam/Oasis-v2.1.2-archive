@@ -7,7 +7,7 @@
 #include "addressbookpage.h"
 #include "askpassphrasedialog.h"
 #include "bip38tooldialog.h"
-#include "bitcoingui.h"
+#include "oasisgui.h"
 #include "blockexplorer.h"
 #include "clientmodel.h"
 #include "guiutil.h"

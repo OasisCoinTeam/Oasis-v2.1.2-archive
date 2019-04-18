@@ -8,7 +8,7 @@
 #include "ui_coincontroldialog.h"
 
 #include "addresstablemodel.h"
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 #include "init.h"
 #include "optionsmodel.h"

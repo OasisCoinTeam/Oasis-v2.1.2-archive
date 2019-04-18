@@ -1,7 +1,7 @@
 #include "obfuscationconfig.h"
 #include "ui_obfuscationconfig.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiconstants.h"
 #include "init.h"
 #include "optionsmodel.h"

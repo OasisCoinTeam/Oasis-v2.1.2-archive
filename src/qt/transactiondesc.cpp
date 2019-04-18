@@ -6,7 +6,7 @@
 
 #include "transactiondesc.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 #include "paymentserver.h"
 #include "transactionrecord.h"

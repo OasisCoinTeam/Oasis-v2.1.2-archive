@@ -7,7 +7,7 @@
 
 #include "paymentserver.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 

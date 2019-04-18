@@ -62,9 +62,9 @@ QT_MOC_CPP = \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
-  qt/moc_bitcoinunits.cpp \
+  qt/moc_oasisamountfield.cpp \
+  qt/moc_oasisgui.cpp \
+  qt/moc_oasisunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
@@ -115,7 +115,7 @@ BITCOIN_MM = \
 
 QT_MOC = \
   qt/oasis.moc \
-  qt/bitcoinamountfield.moc \
+  qt/oasisamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
@@ -135,7 +135,7 @@ BITCOIN_QT_H = \
   qt/askpassphrasedialog.h \
   qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
+  qt/oasisamountfield.h \
   qt/bitcoingui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
@@ -250,9 +250,9 @@ RES_ICONS = \
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
-  qt/bitcoinunits.cpp \
+  qt/oasisamountfield.cpp \
+  qt/oasisgui.cpp \
+  qt/oasisunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \

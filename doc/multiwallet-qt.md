@@ -7,7 +7,7 @@ Fortunately, only four of the files in the existing project are affected by this
 Two new classes have been implemented in two new .h/.cpp file pairs, with much of the functionality that was previously
 implemented in the BitcoinGUI class moved over to these new classes.
 
-The two existing files most affected, by far, are bitcoingui.h and bitcoingui.cpp, as the BitcoinGUI class will require
+The two existing files most affected, by far, are bitcoingui.h and oasisgui.cpp, as the BitcoinGUI class will require
 some major retrofitting.
 
 Only requiring some minor changes is oasis.cpp.

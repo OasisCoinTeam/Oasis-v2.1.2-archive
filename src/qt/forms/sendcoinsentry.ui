@@ -1214,7 +1214,7 @@
   <customwidget>
    <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>
-   <header>bitcoinamountfield.h</header>
+   <header>oasisamountfield.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>

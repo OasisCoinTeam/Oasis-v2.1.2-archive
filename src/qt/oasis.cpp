@@ -8,7 +8,7 @@
 #include "config/oasis-config.h"
 #endif
 
-#include "bitcoingui.h"
+#include "oasisgui.h"
 
 #include "clientmodel.h"
 #include "guiconstants.h"
