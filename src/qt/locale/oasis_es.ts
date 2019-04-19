@@ -2064,7 +2064,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
         <translation>OASIS que fueron anonimizados mediante Protocolo Zerocoin</translation>
     </message>
     <message>
@@ -2132,7 +2132,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>ReeScanear</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation>Estado y/o Mensajes de la última Acción de Creación de moneda.</translation>
     </message>
     <message>

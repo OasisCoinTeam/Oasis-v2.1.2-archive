@@ -2064,7 +2064,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
         <translation>제로코인 프로토콜을 통해 익명화된 OASIS</translation>
     </message>
     <message>
@@ -2132,7 +2132,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>다시 스캔</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation>마지막 발행 이후 상태나 메세지</translation>
     </message>
     <message>

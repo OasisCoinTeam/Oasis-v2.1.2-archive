@@ -2020,7 +2020,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
         <translation>OASIS, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>

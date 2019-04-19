@@ -52,7 +52,7 @@
           </font>
          </property>
          <property name="toolTip">
-          <string>OASIS which were anonymized via Zerocin Protocol</string>
+          <string>OASIS which were anonymized via Zerocoin Protocol</string>
          </property>
          <property name="autoFillBackground">
           <bool>true</bool>
@@ -431,7 +431,7 @@
                 </font>
                </property>
                <property name="toolTip">
-                <string>Status and/or Mesages from the last Mint Action.</string>
+                <string>Status and/or Messages from the last Mint Action.</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::Panel</enum>
@@ -1495,7 +1495,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
       </font>
      </property>
      <property name="text">
-      <string>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</string>
+      <string>Note: These hidden objects are used for communication between the 'Coin Control' dialog and it's parent objects. We don't want to change/reimplement the existing Coin Control, so these objects must be here, even when we don't use them. No, we don't like this approach, either.</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>

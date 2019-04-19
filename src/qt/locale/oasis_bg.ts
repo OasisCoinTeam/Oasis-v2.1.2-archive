@@ -2060,7 +2060,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PIV which were anonymized via Zerocin Protocol</source>
+        <source>PIV which were anonymized via Zerocoin Protocol</source>
         <translation>PIV скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
@@ -2128,7 +2128,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Сканирай</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
