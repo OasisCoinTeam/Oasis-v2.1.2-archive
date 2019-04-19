@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
@@ -500,7 +500,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</string>
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4_Display" stretch="0,0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Display" stretch="0,0">
          <item>
           <widget class="QLabel" name="themeLabel">
            <property name="text">
@@ -521,7 +521,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</string>
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Display">
+        <layout class="QHBoxLayout" name="horizontalLayout_3_Display">
          <item>
           <widget class="QLabel" name="unitLabel">
            <property name="text">
@@ -545,7 +545,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</string>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
+        <layout class="QHBoxLayout" name="horizontalLayout_4_Display">
          <item>
           <widget class="QLabel" name="digitsLabel">
            <property name="text">
@@ -559,7 +559,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</string>
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3_Display">
+        <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
          <item>
           <widget class="QLabel" name="thirdPartyTxUrlsLabel">
            <property name="toolTip">
@@ -582,6 +582,29 @@ https://www.transifex.com/oasis-project/oasis-project-translations</string>
          </item>
         </layout>
        </item>
+         <item>
+          <widget class="QCheckBox" name="checkBoxHideOrphans">
+           <property name="toolTip">
+            <string>Hide orphan stakes in transaction lists</string>
+           </property>
+           <property name="text">
+            <string>Hide orphan stakes</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
        <item>
         <spacer name="verticalSpacer">
          <property name="orientation">

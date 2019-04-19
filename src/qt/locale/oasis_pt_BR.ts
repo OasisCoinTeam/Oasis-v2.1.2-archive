@@ -3554,7 +3554,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
         <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Oasis Core</translation>
     </message>
     <message>

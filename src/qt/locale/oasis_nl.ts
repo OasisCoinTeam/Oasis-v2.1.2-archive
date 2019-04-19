@@ -2047,8 +2047,8 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
-        <translation>OASIS die via het Zerocin Protocol geanonimiseerd werden</translation>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
+        <translation>OASIS die via het Zerocoin Protocol geanonimiseerd werden</translation>
     </message>
     <message>
         <source>Zerocoin OASIS (zOASIS)</source>
@@ -2115,7 +2115,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>ReScan</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation>Status en/of Berichten van de laatste mint actie.</translation>
     </message>
     <message>
@@ -4684,7 +4684,7 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Oasis Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
         <translation>Copyright (C) 2015-%i The Oasis Kernontwikkelaars</translation>
     </message>
     <message>

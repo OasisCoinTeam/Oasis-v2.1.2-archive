@@ -2716,7 +2716,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <name>PrivacyDialog</name>
     <message>
         <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2811,7 +2811,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+27"/>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6186,7 +6186,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Oasis Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -2064,7 +2064,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>OASIS which were anonymized via Zerocin Protocol</source>
+        <source>OASIS which were anonymized via Zerocoin Protocol</source>
         <translation>OASIS que fueron anonimizados mediante Protocolo Zerocoin</translation>
     </message>
     <message>
@@ -2132,7 +2132,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>ReeScanear</translation>
     </message>
     <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
+        <source>Status and/or Messages from the last Mint Action.</source>
         <translation>Estado y/o Mensajes de la última Acción de Creación de moneda.</translation>
     </message>
     <message>
@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Oasis Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Oasis Core Developers</translation>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
+        <translation>Copyright (C) 2018-%i The Oasis Core developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

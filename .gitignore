@@ -87,6 +87,10 @@ Makefile
 oasis-qt
 oasis-Qt.app
 
+# Berkeley DB
+db-4.8.30.NC
+db4
+
 # Unit-tests
 Makefile.test
 oasis-qt_test
