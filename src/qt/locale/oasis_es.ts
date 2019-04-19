@@ -4704,8 +4704,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Oasis Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Oasis Core Developers</translation>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
+        <translation>Copyright (C) 2018-%i The Oasis Core developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

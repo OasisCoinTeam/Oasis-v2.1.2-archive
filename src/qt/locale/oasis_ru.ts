@@ -3239,7 +3239,7 @@ https://www.transifex.com/oasis-project/oasis-project-translations</translation>
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Oasis Core Developers</source>
+        <source>Copyright (C) 2018-%i The Oasis Core developers</source>
         <translation>Copyright (C) 2015-%i Разработчики Oasis Core</translation>
     </message>
     <message>
