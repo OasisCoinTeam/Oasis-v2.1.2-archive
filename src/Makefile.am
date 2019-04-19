@@ -22,15 +22,15 @@ BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BOOST_CPPFLAGS) $(LEVELDB_CPP
 
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 
-LIBBITCOIN_SERVER=libbitcoin_server.a
-LIBBITCOIN_WALLET=libbitcoin_wallet.a
-LIBBITCOIN_COMMON=libbitcoin_common.a
-LIBBITCOIN_CLI=libbitcoin_cli.a
-LIBBITCOIN_UTIL=libbitcoin_util.a
-LIBBITCOIN_CRYPTO=crypto/libbitcoin_crypto.a
-LIBBITCOIN_UNIVALUE=univalue/libbitcoin_univalue.a
-LIBBITCOIN_ZEROCOIN=libzerocoin/libbitcoin_zerocoin.a
-LIBBITCOINQT=qt/libbitcoinqt.a
+LIBBITCOIN_SERVER=liboasis_server.a
+LIBBITCOIN_WALLET=liboasis_wallet.a
+LIBBITCOIN_COMMON=liboasis_common.a
+LIBBITCOIN_CLI=liboasis_cli.a
+LIBBITCOIN_UTIL=liboasis_util.a
+LIBBITCOIN_CRYPTO=crypto/liboasis_crypto.a
+LIBBITCOIN_UNIVALUE=univalue/liboasis_univalue.a
+LIBBITCOIN_ZEROCOIN=libzerocoin/liboasis_zerocoin.a
+LIBBITCOINQT=qt/liboasisqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
@@ -39,25 +39,25 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES = \
-  crypto/libbitcoin_crypto.a \
-  libbitcoin_util.a \
-  libbitcoin_common.a \
-  univalue/libbitcoin_univalue.a \
-  libzerocoin/libbitcoin_zerocoin.a \
-  libbitcoin_server.a \
-  libbitcoin_cli.a
+  crypto/liboasis_crypto.a \
+  liboasis_util.a \
+  liboasis_common.a \
+  univalue/liboasis_univalue.a \
+  libzerocoin/liboasis_zerocoin.a \
+  liboasis_server.a \
+  liboasis_cli.a
 if ENABLE_WALLET
 BITCOIN_INCLUDES += $(BDB_CPPFLAGS)
-EXTRA_LIBRARIES += libbitcoin_wallet.a
+EXTRA_LIBRARIES += liboasis_wallet.a
 endif
 
 if ENABLE_ZMQ
-EXTRA_LIBRARIES += libbitcoin_zmq.a
+EXTRA_LIBRARIES += liboasis_zmq.a
 endif
 
 if BUILD_BITCOIN_LIBS
-lib_LTLIBRARIES = libbitcoinconsensus.la
-LIBBITCOIN_CONSENSUS=libbitcoinconsensus.la
+lib_LTLIBRARIES = liboasisconsensus.la
+LIBBITCOIN_CONSENSUS=liboasisconsensus.la
 else
 LIBBITCOIN_CONSENSUS=
 endif
@@ -188,11 +188,11 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
+liboasis_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between oasisd and oasis-qt
-libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libbitcoin_server_a_SOURCES = \
+liboasis_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+liboasis_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
   bloom.cpp \
@@ -226,11 +226,11 @@ libbitcoin_server_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
-LIBBITCOIN_ZMQ=libbitcoin_zmq.a
+LIBBITCOIN_ZMQ=liboasis_zmq.a
 
-libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
+liboasis_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+liboasis_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+liboasis_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp
@@ -239,9 +239,9 @@ endif
 # wallet: shared between oasisd and oasis-qt, but only linked
 # when wallet enabled
 
-libbitcoin_wallet_a_CFLAGS = -fPIC
-libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
-libbitcoin_wallet_a_SOURCES = \
+liboasis_wallet_a_CFLAGS = -fPIC
+liboasis_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+liboasis_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
   denomination_functions.cpp \
@@ -266,9 +266,9 @@ libbitcoin_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libbitcoin_crypto_a_CFLAGS = -fPIC
-crypto_libbitcoin_crypto_a_CPPFLAGS = $(BITCOIN_CONFIG_INCLUDES)
-crypto_libbitcoin_crypto_a_SOURCES = \
+crypto_liboasis_crypto_a_CFLAGS = -fPIC
+crypto_liboasis_crypto_a_CPPFLAGS = $(BITCOIN_CONFIG_INCLUDES)
+crypto_liboasis_crypto_a_SOURCES = \
   crypto/sha1.cpp \
   crypto/sha256.cpp \
   crypto/sha512.cpp \
@@ -326,7 +326,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_types.h
 
 # univalue JSON library
-univalue_libbitcoin_univalue_a_SOURCES = \
+univalue_liboasis_univalue_a_SOURCES = \
   univalue/univalue.cpp \
   univalue/univalue_read.cpp \
   univalue/univalue_write.cpp \
@@ -334,7 +334,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue.h
 
 # libzerocoin library
-libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
+libzerocoin_liboasis_zerocoin_a_SOURCES = \
   libzerocoin/Accumulator.h \
   libzerocoin/AccumulatorProofOfKnowledge.h \
   libzerocoin/bignum.h \
@@ -357,8 +357,8 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
 # common: shared between oasisd, and oasis-qt and non-server tools
-libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
-libbitcoin_common_a_SOURCES = \
+liboasis_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+liboasis_common_a_SOURCES = \
   accumulators.cpp \
   accumulatormap.cpp \
   allocators.cpp \
@@ -393,8 +393,8 @@ libbitcoin_common_a_SOURCES = \
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libbitcoin_util_a_CPPFLAGS = $(BITCOIN_INCLUDES)
-libbitcoin_util_a_SOURCES = \
+liboasis_util_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+liboasis_util_a_SOURCES = \
   allocators.cpp \
   compat/strnlen.cpp \
   compat/glibc_sanity.cpp \
@@ -412,17 +412,17 @@ libbitcoin_util_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
-libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
+liboasis_util_a_SOURCES += compat/glibc_compat.cpp
+liboasis_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
 # cli: shared between oasis-cli and oasis-qt
-libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
-libbitcoin_cli_a_SOURCES = \
+liboasis_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+liboasis_cli_a_SOURCES = \
   rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_liboasis_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
@@ -442,7 +442,7 @@ oasisd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-oasisd_LDADD += libbitcoin_wallet.a
+oasisd_LDADD += liboasis_wallet.a
 endif
 oasisd_SOURCES = oasisd.cpp
 #
@@ -494,7 +494,7 @@ oasis_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
-libbitcoinconsensus_la_SOURCES = \
+liboasisconsensus_la_SOURCES = \
   allocators.cpp \
   primitives/transaction.cpp \
   crypto/hmac_sha512.cpp \
@@ -514,15 +514,15 @@ libbitcoinconsensus_la_SOURCES = \
   utilstrencodings.cpp
 
 if GLIBC_BACK_COMPAT
-  libbitcoinconsensus_la_SOURCES += compat/glibc_compat.cpp
-  libbitcoinconsensus_la_SOURCES += compat/glibcxx_compat.cpp
+  liboasisconsensus_la_SOURCES += compat/glibc_compat.cpp
+  liboasisconsensus_la_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-libbitcoinconsensus_la_LDFLAGS = -no-undefined $(RELDFLAGS)
-libbitcoinconsensus_la_LIBADD = $(CRYPTO_LIBS) $(BOOST_LIBS)
-libbitcoinconsensus_la_CPPFLAGS = $(CRYPTO_CFLAGS) -I$(builddir)/obj -DBUILD_BITCOIN_INTERNAL
+liboasisconsensus_la_LDFLAGS = -no-undefined $(RELDFLAGS)
+liboasisconsensus_la_LIBADD = $(CRYPTO_LIBS) $(BOOST_LIBS)
+liboasisconsensus_la_CPPFLAGS = $(CRYPTO_CFLAGS) -I$(builddir)/obj -DBUILD_BITCOIN_INTERNAL
 if USE_LIBSECP256K1
-libbitcoinconsensus_la_LIBADD += secp256k1/libsecp256k1.la
+liboasisconsensus_la_LIBADD += secp256k1/libsecp256k1.la
 endif
 endif
 

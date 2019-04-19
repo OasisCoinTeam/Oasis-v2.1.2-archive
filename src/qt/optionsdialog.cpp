@@ -9,7 +9,7 @@
 #include "optionsdialog.h"
 #include "ui_optionsdialog.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 #include "obfuscation.h"
 #include "optionsmodel.h"

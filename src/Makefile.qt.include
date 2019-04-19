@@ -1,5 +1,5 @@
 bin_PROGRAMS += qt/oasis-qt
-EXTRA_LIBRARIES += qt/libbitcoinqt.a
+EXTRA_LIBRARIES += qt/liboasisqt.a
 
 # oasis qt core #
 QT_TS = \
@@ -62,9 +62,9 @@ QT_MOC_CPP = \
   qt/moc_askpassphrasedialog.cpp \
   qt/moc_bip38tooldialog.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
-  qt/moc_bitcoinunits.cpp \
+  qt/moc_oasisamountfield.cpp \
+  qt/moc_oasisgui.cpp \
+  qt/moc_oasisunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
@@ -115,7 +115,7 @@ BITCOIN_MM = \
 
 QT_MOC = \
   qt/oasis.moc \
-  qt/bitcoinamountfield.moc \
+  qt/oasisamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
@@ -135,7 +135,7 @@ BITCOIN_QT_H = \
   qt/askpassphrasedialog.h \
   qt/bip38tooldialog.h \
   qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
+  qt/oasisamountfield.h \
   qt/bitcoingui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
@@ -250,9 +250,9 @@ RES_ICONS = \
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
-  qt/bitcoinunits.cpp \
+  qt/oasisamountfield.cpp \
+  qt/oasisgui.cpp \
+  qt/oasisunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
@@ -337,13 +337,13 @@ BITCOIN_RC = qt/res/oasis-qt-res.rc
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
-qt_libbitcoinqt_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_liboasisqt_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+qt_liboasisqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
 
-nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_qt_liboasisqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
 
 # forms/foo.h -> forms/ui_foo.h
@@ -352,7 +352,7 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_oasis_qt_OBJECTS) : | $(QT_MOC)
+$(qt_liboasisqt_a_OBJECTS) $(qt_oasis_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -370,7 +370,7 @@ endif
 if TARGET_WINDOWS
   qt_oasis_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_oasis_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_oasis_qt_LDADD = qt/liboasisqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
 qt_oasis_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
@@ -388,7 +388,7 @@ QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/oasisstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/oasisstrings.cpp: $(liboasis_server_a_SOURCES) $(liboasis_wallet_a_SOURCES) $(liboasis_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
@@ -407,12 +407,12 @@ $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(R
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name oasis $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
+CLEAN_QT = $(nodist_qt_liboasisqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
 oasis_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_oasis_qt_OBJECTS) qt/oasis-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_liboasisqt_a_OBJECTS) $(qt_oasis_qt_OBJECTS) qt/oasis-qt$(EXEEXT) $(LIBBITCOINQT)
 
 oasis_qt : qt/oasis-qt$(EXEEXT)
 

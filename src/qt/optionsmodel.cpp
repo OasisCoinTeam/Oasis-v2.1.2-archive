@@ -10,7 +10,7 @@
 
 #include "optionsmodel.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 
 #include "amount.h"

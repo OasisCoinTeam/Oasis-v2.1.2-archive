@@ -8,7 +8,7 @@
 #include "ui_coincontroldialog.h"
 
 #include "addresstablemodel.h"
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "guiutil.h"
 #include "init.h"
 #include "optionsmodel.h"
@@ -740,7 +740,7 @@ void CoinControlDialog::updateView()
 
     ui->treeWidget->clear();
     ui->treeWidget->setEnabled(false); // performance, otherwise updateLabels would be called for every checked checkbox
-    ui->treeWidget->setAlternatingRowColors(!treeMode);
+    ui->treeWidget->setAlternatingRowColors(false);
     QFlags<Qt::ItemFlag> flgCheckbox = Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable;
     QFlags<Qt::ItemFlag> flgTristate = Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;
 

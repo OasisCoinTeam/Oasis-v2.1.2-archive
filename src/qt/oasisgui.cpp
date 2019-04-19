@@ -4,9 +4,9 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "bitcoingui.h"
+#include "oasisgui.h"
 
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "guiutil.h"
@@ -64,6 +64,7 @@
 #endif
 
 const QString BitcoinGUI::DEFAULT_WALLET = "~Default";
+double GetPoSKernelPS();
 
 BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMainWindow(parent),
                                                                             clientModel(0),

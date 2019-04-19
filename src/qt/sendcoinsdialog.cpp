@@ -9,7 +9,7 @@
 
 #include "addresstablemodel.h"
 #include "askpassphrasedialog.h"
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "clientmodel.h"
 #include "coincontroldialog.h"
 #include "guiutil.h"

@@ -21,7 +21,7 @@
 #include "utilmoneystr.h"
 #include "guiutil.h"
 #include "qvalidatedlineedit.h"
-#include "bitcoinamountfield.h"
+#include "oasisamountfield.h"
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QHBoxLayout>

@@ -7,7 +7,7 @@
 
 #include "addressbookpage.h"
 #include "addresstablemodel.h"
-#include "bitcoinunits.h"
+#include "oasisunits.h"
 #include "coincontroldialog.h"
 #include "libzerocoin/Denominations.h"
 #include "optionsmodel.h"
