@@ -40,6 +40,7 @@ public:
         Theme,               // QString
         Language,            // QString
         CoinControlFeatures, // bool
+        HideOrphans,    // bool
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
@@ -83,6 +84,7 @@ private:
     int nDisplayUnit;
     QString strThirdPartyTxUrls;
     bool fCoinControlFeatures;
+    bool fHideOrphans;
     /* settings that were overriden by command-line */
     QString strOverriddenByCommandLine;
 
@@ -96,6 +98,7 @@ signals:
     void preferredDenomChanged(int);
     void anonymizeOasisAmountChanged(int);
     void coinControlFeaturesChanged(bool);
+    void hideOrphansChanged(bool);
 };
 
 #endif // BITCOIN_QT_OPTIONSMODEL_H
