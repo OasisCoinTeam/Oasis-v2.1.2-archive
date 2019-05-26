@@ -24,7 +24,7 @@ Decentralized blockchain voting provides for consensus based advancement of the 
 **Twitter:** <a href="https://twitter.com/exploreOASIS">https://twitter.com/exploreOASIS</a><br>
 **Explorer:** <a href="https://oasis.ccore.online/">https://oasis.ccore.online/</a><br>
 **Masternode Explorer:** <a href="https://oasis.mn.zone/">https://oasis.mn.zone/</a><br>
-**Governance:** <a href="http://oasis.mn.zone/proposals">http://oasis.mn.zone/proposals</a>(...coming Mar2019)<br>
+**Governance:** <a href="http://oasis.mn.zone/proposals">http://oasis.mn.zone/proposals</a><br>
 **Exchange:** <a href="https://altmarkets.io/trading/oasisbtc">https://altmarkets.io/trading/oasisbtc</a><br>
 
 
