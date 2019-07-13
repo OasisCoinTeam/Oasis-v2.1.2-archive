@@ -172,6 +172,7 @@ public:
         vSeeds.push_back(CDNSSeedData("167.86.111.111", "167.86.111.111"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("199.192.21.8", "199.192.21.8"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("199.192.21.80", "199.192.21.80"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("45.76.129.70", "45.76.129.70"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
         vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
 
