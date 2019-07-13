@@ -169,13 +169,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d928efd171c0d8435d457d9becf8542c8e19ddb560dc9e08189014f6617"));
         assert(genesis.hashMerkleRoot == uint256("0x92efca81c11c8026ae8ee4fc743aee0e458f5b9866b917c381b0d3a1e7edda63"));
 
-        vSeeds.push_back(CDNSSeedData("18.188.43.235", "18.188.43.235"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("35.177.169.240", "35.177.169.240"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("35.178.43.213", "35.178.43.213"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("80.211.46.189", "80.211.46.189"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("80.211.33.67", "80.211.33.67"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("18.218.209.226", "18.218.209.226"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("51.15.89.68", "51.15.89.68"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("167.86.111.111", "167.86.111.111"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("199.192.21.8", "199.192.21.8"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("199.192.21.80", "199.192.21.80"));// Single node - MN runs for more than half a year
+        vSeeds.push_back(CDNSSeedData("45.76.129.70", "45.76.129.70"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
         vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
 
