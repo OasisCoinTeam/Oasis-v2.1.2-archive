@@ -176,7 +176,9 @@ public:
         vSeeds.push_back(CDNSSeedData("80.211.33.67", "80.211.33.67"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("18.218.209.226", "18.218.209.226"));// Single node - MN runs for more than half a year
         vSeeds.push_back(CDNSSeedData("51.15.89.68", "51.15.89.68"));// Single node - MN runs for more than half a year
-        vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
+		vSeeds.push_back(CDNSSeedData("167.99.193.12", "167.99.193.12"));// Remapper1
+		vSeeds.push_back(CDNSSeedData("178.62.68.177", "178.62.68.177"));// Remapper2
+		vSeeds.push_back(CDNSSeedData("oasis.seeds.mn.zone", "oasis.seeds.mn.zone")); // Third party DNS Seeder
         vSeeds.push_back(CDNSSeedData("oasis.mnseeds.com", "oasis.mnseeds.com")); // Third party DNS Seeder
 
 
@@ -219,6 +221,8 @@ public:
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+		nStakeMinConfirmations = 320;   // Required number of confirmations
+		nStakeMinAmount = 10 * COIN;    // Minimum required staking amount
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
