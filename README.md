@@ -9,8 +9,6 @@ OASIS Core integration/staging repository
 
 **OASIS Coin Masternode Cryptocurrency**
 
-OASIS is a fork of _PIVX_ that forked _Dash_ that forked _Bitcoin_
-
 OASIS is based on a Community Takeover of a previous MN project called _1UP_
 
 Fast transactions featuring guaranteed zero confirmation transactions, known as _SwiftX_.
