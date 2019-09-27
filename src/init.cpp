@@ -239,7 +239,11 @@ void PrepareShutdown()
 #endif
 
 #ifndef WIN32
-    boost::filesystem::remove(GetPidFile());
+    try {
+        boost::filesystem::remove(GetPidFile());
+    } catch (const boost::filesystem::filesystem_error& e) {
+        LogPrintf("%s: Unable to remove pidfile: %s\n", __func__, e.what());
+    }
 #endif
     UnregisterAllValidationInterfaces();
 }
@@ -1257,30 +1261,8 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     fReindex = GetBoolArg("-reindex", false);
 
-    // Upgrading to 0.8; hard-link the old blknnnn.dat files into /blocks/
-    filesystem::path blocksDir = GetDataDir() / "blocks";
-    if (!filesystem::exists(blocksDir)) {
-        filesystem::create_directories(blocksDir);
-        bool linked = false;
-        for (unsigned int i = 1; i < 10000; i++) {
-            filesystem::path source = GetDataDir() / strprintf("blk%04u.dat", i);
-            if (!filesystem::exists(source)) break;
-            filesystem::path dest = blocksDir / strprintf("blk%05u.dat", i - 1);
-            try {
-                filesystem::create_hard_link(source, dest);
-                LogPrintf("Hardlinked %s -> %s\n", source.string(), dest.string());
-                linked = true;
-            } catch (filesystem::filesystem_error& e) {
-                // Note: hardlink creation failing is not a disaster, it just means
-                // blocks will get re-downloaded from peers.
-                LogPrintf("Error hardlinking blk%04u.dat : %s\n", i, e.what());
-                break;
-            }
-        }
-        if (linked) {
-            fReindex = true;
-        }
-    }
+    // Create blocks directory if it doesn't already exist
+    filesystem::create_directories(GetDataDir() / "blocks");
 
     // cache size calculations
     size_t nTotalCache = (GetArg("-dbcache", nDefaultDbCache) << 20);
@@ -1297,6 +1279,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     nCoinCacheSize = nTotalCache / 300; // coins in memory require around 300 bytes
 
     bool fLoaded = false;
+    bool fRepair = false;
     while (!fLoaded) {
         bool fReset = fReindex;
         std::string strLoadError;
@@ -1331,6 +1314,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                 uiInterface.InitMessage(_("Loading block index..."));
                 if (!LoadBlockIndex()) {
                     strLoadError = _("Error loading block database");
+                    fRepair = true;
                     break;
                 }
 
@@ -1342,6 +1326,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                 // Initialize the block index (no-op if non-empty database was already loaded)
                 if (!InitBlockIndex()) {
                     strLoadError = _("Error initializing block database");
+                    fRepair = true;
                     break;
                 }
 
@@ -1435,12 +1420,14 @@ bool AppInit2(boost::thread_group& threadGroup)
                 if (!CVerifyDB().VerifyDB(pcoinsdbview, 4, GetArg("-checkblocks", 100))) {
                     strLoadError = _("Corrupted block database detected");
                     fVerifyingBlocks = false;
+                    fRepair = true;
                     break;
                 }
             } catch (std::exception& e) {
                 if (fDebug) LogPrintf("%s\n", e.what());
                 strLoadError = _("Error opening block database");
                 fVerifyingBlocks = false;
+                fRepair = true;
                 break;
             }
 
@@ -1450,7 +1437,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
         if (!fLoaded) {
             // first suggest a reindex
-            if (!fReset) {
+            if (!fReset && !fRepair) {
                 bool fRet = uiInterface.ThreadSafeMessageBox(
                     strLoadError + ".\n\n" + _("Do you want to rebuild the block database now?"),
                     "", CClientUIInterface::MSG_ERROR | CClientUIInterface::BTN_ABORT);
@@ -1459,6 +1446,49 @@ bool AppInit2(boost::thread_group& threadGroup)
                     fRequestShutdown = false;
                 } else {
                     LogPrintf("Aborted block database rebuild. Exiting.\n");
+                    return false;
+                }
+            } else if (fRepair) {
+                bool fRet = uiInterface.ThreadSafeMessageBox(
+                    strLoadError + ".\n\n" + _("Do you want to resync the block database?"),
+                    "", CClientUIInterface::MSG_ERROR | CClientUIInterface::BTN_ABORT);
+                if (fRet) {
+                    uiInterface.InitMessage(_("Recovering..."));
+                    filesystem::path blocksDir = GetDataDir() / "blocks";
+                    filesystem::path chainstateDir = GetDataDir() / "chainstate";
+                    filesystem::path sporksDir = GetDataDir() / "sporks";
+                    filesystem::path zerocoinDir = GetDataDir() / "zerocoin";
+
+                    LogPrintf("Deleting blockchain folders blocks, chainstate, sporks and zerocoin\n");
+                    try {
+                        if (filesystem::exists(blocksDir)){
+                            boost::filesystem::remove_all(blocksDir);
+                            LogPrintf("recovery: folder deleted: %s\n", blocksDir.string().c_str());
+                        }
+
+                        if (filesystem::exists(chainstateDir)){
+                            boost::filesystem::remove_all(chainstateDir);
+                            LogPrintf("recovery: folder deleted: %s\n", chainstateDir.string().c_str());
+                        }
+
+                        if (filesystem::exists(sporksDir)){
+                            boost::filesystem::remove_all(sporksDir);
+                            LogPrintf("recovery: folder deleted: %s\n", sporksDir.string().c_str());
+                        }
+
+                        if (filesystem::exists(zerocoinDir)){
+                            boost::filesystem::remove_all(zerocoinDir);
+                            LogPrintf("recovery: folder deleted: %s\n", zerocoinDir.string().c_str());
+                        }
+                    } catch (boost::filesystem::filesystem_error& error) {
+                        LogPrintf("Failed to delete blockchain folders %s\n", error.what());
+                        strLoadError = _("Error deleting blockchain folders");
+                        return InitError(strLoadError);
+                    }
+                    uiInterface.ThreadSafeMessageBox("Recovery complete, your wallet will resync when next opened.", "", CClientUIInterface::BTN_ABORT);
+                    return false;
+                } else {
+                    LogPrintf("Aborted block database resync. Exiting.\n");
                     return false;
                 }
             } else {
@@ -1585,6 +1615,8 @@ bool AppInit2(boost::thread_group& threadGroup)
 
             // Restore wallet transaction metadata after -zapwallettxes=1
             if (GetBoolArg("-zapwallettxes", false) && GetArg("-zapwallettxes", "1") != "2") {
+                CWalletDB walletdb(strWalletFile);
+
                 BOOST_FOREACH (const CWalletTx& wtxOld, vWtx) {
                     uint256 hash = wtxOld.GetHash();
                     std::map<uint256, CWalletTx>::iterator mi = pwalletMain->mapWallet.find(hash);
@@ -1598,7 +1630,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                         copyTo->fFromMe = copyFrom->fFromMe;
                         copyTo->strFromAccount = copyFrom->strFromAccount;
                         copyTo->nOrderPos = copyFrom->nOrderPos;
-                        copyTo->WriteToDisk();
+                        copyTo->WriteToDisk(&walletdb);
                     }
                 }
             }
