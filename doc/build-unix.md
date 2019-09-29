@@ -130,21 +130,27 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-./contrib/install_db4.sh
-```
+Oasis_ROOT=$(pwd)
 
-The above `install_db4` bash script will download and compile Berkeley DB 4.8 automatically, after this, proceed with the following to compile OASIS Core:
+# Pick some path to install BDB to, here we create a directory within the oasis directory
+BDB_PREFIX="${Oasis_ROOT}/db4"
+mkdir -p $BDB_PREFIX
 
-**Standard Compile:**
+# Fetch the source and verify that it is not tampered with
+wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
+echo '12edc0df75bf9abd7f82f821795bcee50f42cb2e5f76a6a281b85732798364ef  db-4.8.30.NC.tar.gz' | sha256sum -c
+# -> db-4.8.30.NC.tar.gz: OK
+tar -xzvf db-4.8.30.NC.tar.gz
 
-```bash
-./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
-```
+# Build the library and install to our prefix
+cd db-4.8.30.NC/build_unix/
+#  Note: Do a static build so that it can be embedded into the exectuable, instead of having to find a .so at runtime
+../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
+make install
 
-**Customized Compile:**
-
-```bash
-./configure (custom args here...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
+# Configure Oasis Core to use our own-built instance of BDB
+cd $Oasis_ROOT
+./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
