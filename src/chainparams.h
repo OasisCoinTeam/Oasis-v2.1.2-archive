@@ -116,13 +116,15 @@ public:
     int Zerocoin_Block_FirstFraudulent() const { return nBlockFirstFraudulent; }
     int Zerocoin_Block_LastGoodCheckpoint() const { return nBlockLastGoodCheckpoint; }
     int Zerocoin_StartTime() const { return nZerocoinStartTime; }
-	    /** Staking Requirements */
-	int Stake_MinConfirmations() const {
-		return nStakeMinConfirmations;
-	}
-	CAmount Stake_MinAmount() const {
-		return nStakeMinAmount;
-	}
+    int CLTV_ActivationBlock() const { return nCLTVUpgradeBlock; }
+
+    /** Staking Requirements */
+    int Stake_MinConfirmations() const {
+        return nStakeMinConfirmations;
+    }
+    CAmount Stake_MinAmount() const {
+        return nStakeMinAmount;
+    }
 
 protected:
     CChainParams() {}
@@ -179,6 +181,7 @@ protected:
     int nBlockFirstFraudulent;
     int nBlockLastGoodCheckpoint;
     int nZerocoinStartTime;
+    int nCLTVUpgradeBlock;
 	
 	/** Staking Requirements */
 	int nStakeMinConfirmations;

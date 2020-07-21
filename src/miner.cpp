@@ -110,10 +110,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // Make sure to create the correct block version after zerocoin is enabled
     bool fZerocoinActive = GetAdjustedTime() >= Params().Zerocoin_StartTime();
-    if (fZerocoinActive)
-        pblock->nVersion = 4;
-    else
+    if (!fZerocoinActive)
         pblock->nVersion = 3;
+    else
+        pblock->nVersion = 4;
+    // CLTV nVersion check requires the height, so this is checked down below after LOCK'ing main & mempool...
 
     // Create coinbase tx
     CMutableTransaction txNew;
@@ -177,6 +178,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         CBlockIndex* pindexPrev = chainActive.Tip();
         const int nHeight = pindexPrev->nHeight + 1;
         CCoinsViewCache view(pcoinsTip);
+
+        // CLTV check, do we enforce the CLTV block version yet? (version 5)
+        bool fCLTVActive = nHeight >= Params().CLTV_ActivationBlock();
+        if (fCLTVActive)
+            pblock->nVersion = 5;
 
         // Priority order to process transactions
         list<COrphan> vOrphan; // list memory doesn't move

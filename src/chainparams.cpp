@@ -139,6 +139,7 @@ public:
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
         nZerocoinStartTime = 1527415096; // 2018-05-27T09:58:16Z
+        nCLTVUpgradeBlock = 1175000;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -259,7 +260,8 @@ public:
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 43199500 * COIN;
-        nZerocoinStartHeight = 201576;
+        nZerocoinStartHeight = 301;
+        nCLTVUpgradeBlock = 401;
         nZerocoinStartTime = 1501776000;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators

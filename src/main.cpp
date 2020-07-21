@@ -3029,6 +3029,18 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         flags |= SCRIPT_VERIFY_DERSIG;
     }
 
+    // Start enforcing CLTV-enabled blocks (nVersion 5) after the activation height
+    bool fCLTVActive = pindex->nHeight >= Params().CLTV_ActivationBlock();
+    if (fCLTVActive) {
+        if (block.nVersion >= 5) {
+            // TODO: Add CLTV flag...
+        } else {
+            // CLTV should be active now, but this block is below version 5, reject...
+            return state.DoS(100, error("ConnectBlock() : tried to create a non-CLTV-enforced block after the CLTV enforcement height"),
+                    REJECT_OBSOLETE, "bad-version");
+        }
+    }
+
     CBlockUndo blockundo;
 
     CCheckQueueControl<CScriptCheck> control(fScriptChecks && nScriptCheckThreads ? &scriptcheckqueue : NULL);
@@ -4362,6 +4374,14 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     // Reject block.nVersion=2 blocks when 95% (75% on testnet) of the network has upgraded:
     if (block.nVersion < 3 && CBlockIndex::IsSuperMajority(3, pindexPrev, Params().RejectBlockOutdatedMajority())) {
         return state.Invalid(error("%s : rejected nVersion=2 block", __func__),
+            REJECT_OBSOLETE, "bad-version");
+    }
+
+    // Reject block.nVersion=3 / 4 blocks if they're newer than the CLTV activation height
+    bool fCLTVActive = nHeight >= Params().CLTV_ActivationBlock();
+    if (fCLTVActive && block.nVersion < 5) {
+        // CLTV should be active now, but this block is below version 5, reject...
+        return state.Invalid(error("%s : rejected nVersion=%u block (CLTV Enforcement missing)", __func__, block.nVersion),
             REJECT_OBSOLETE, "bad-version");
     }
 
