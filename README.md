@@ -23,7 +23,7 @@ Decentralized blockchain voting provides for consensus based advancement of the 
 **Explorer:** <a href="https://oasis.ccore.online/">https://oasis.ccore.online/</a><br>
 **Masternode Explorer:** <a href="https://oasis.mn.zone/">https://oasis.mn.zone/</a><br>
 **Governance:** <a href="http://oasis.mn.zone/proposals">http://oasis.mn.zone/proposals</a><br>
-**Exchange:** <a href="https://altmarkets.io/trading/oasisbtc">https://altmarkets.io/trading/oasisbtc</a><br>
+**Exchange:** <a href="https://www.southxchange.com/Market/Book/XOS/BTC">https://www.southxchange.com/Market/Book/XOS/BTC</a><br>
 
 
 ### Coin Specs
