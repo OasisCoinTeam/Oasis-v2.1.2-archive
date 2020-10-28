@@ -1800,9 +1800,15 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+        // BIP65 CLTV Activation
+        bool fCLTVActive = chainActive.Height() >= Params().CLTV_ActivationBlock();
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
-        if (!CheckInputs(tx, state, view, true, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
+        int flags = STANDARD_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVActive)
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        if (!CheckInputs(tx, state, view, true, flags, true)) {
             return error("AcceptToMemoryPool: : ConnectInputs failed %s", hash.ToString());
         }
 
@@ -1815,7 +1821,10 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         // There is a similar check in CreateNewBlock() to prevent creating
         // invalid blocks, however allowing such transactions into the mempool
         // can be exploited as a DoS attack.
-        if (!CheckInputs(tx, state, view, true, MANDATORY_SCRIPT_VERIFY_FLAGS, true)) {
+        flags = MANDATORY_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVActive)
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        if (!CheckInputs(tx, state, view, true, flags, true)) {
             return error("AcceptToMemoryPool: : BUG! PLEASE REPORT THIS! ConnectInputs failed against MANDATORY but not STANDARD flags %s", hash.ToString());
         }
 
@@ -1996,9 +2005,15 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+        // BIP65 CLTV Activation
+        bool fCLTVActive = chainActive.Height() >= Params().CLTV_ActivationBlock();
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
-        if (!CheckInputs(tx, state, view, false, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
+        int flags = STANDARD_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVActive)
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        if (!CheckInputs(tx, state, view, false, flags, true)) {
             return error("AcceptableInputs: : ConnectInputs failed %s", hash.ToString());
         }
 
@@ -3033,7 +3048,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     bool fCLTVActive = pindex->nHeight >= Params().CLTV_ActivationBlock();
     if (fCLTVActive) {
         if (block.nVersion >= 5) {
-            // TODO: Add CLTV flag...
+            // CLTV is activated on this block, so now we verify CLTV scripts!
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
         } else {
             // CLTV should be active now, but this block is below version 5, reject...
             return state.DoS(100, error("ConnectBlock() : tried to create a non-CLTV-enforced block after the CLTV enforcement height"),
